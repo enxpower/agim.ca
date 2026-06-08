@@ -179,9 +179,9 @@ main{flex:1}
   .clients-grid{grid-template-columns:repeat(3,1fr)}
   .client-item:nth-child(5n){border-right:1px solid var(--border)}
   .client-item:nth-child(3n){border-right:none}
-  .trust-inner{flex-wrap:wrap;gap:0}
-  .trust-item{flex:0 0 50%;border-bottom:1px solid var(--border)}
-  .trust-item:nth-child(2){border-right:none}
+  .trust-inner{display:grid;grid-template-columns:1fr 1fr;gap:0}
+  .trust-item{flex:none;border-right:none;border-bottom:1px solid var(--border);padding:20px 16px}
+  .trust-item:nth-child(odd){border-right:1px solid var(--border)}
   .trust-item:nth-last-child(-n+2){border-bottom:none}
   .docs-row{flex-direction:column;align-items:flex-start}
   .nav-links{display:none}
@@ -216,15 +216,17 @@ main{flex:1}
   .foot-meta{font-size:10px}
   .foot-links a{font-size:10px}
   .foot-links{gap:16px}
-  .trust-inner{flex-direction:column}
-  .trust-item{flex:none;width:100%;border-right:none;border-bottom:1px solid var(--border)}
+  .trust-inner{display:grid;grid-template-columns:1fr 1fr}
+  .trust-item{flex:none;width:100%;border-right:none;border-bottom:1px solid var(--border);padding:18px 12px}
+  .trust-item:nth-child(odd){border-right:1px solid var(--border)}
   .trust-item:last-child{border-bottom:none}
+  .trust-item:nth-last-child(-n+2){border-bottom:none}
   .clients-grid{grid-template-columns:1fr 1fr}
   .client-item:nth-child(3n){border-right:1px solid var(--border)}
   .client-item:nth-child(2n){border-right:none}
   .prog-card{padding:32px 24px}
   .prog-title{font-size:18px}
-  .trust-n{font-size:22px}
+  .trust-n{font-size:24px}
 }
 </style>
 </head>
@@ -235,7 +237,7 @@ main{flex:1}
   <p class="eyebrow">Energy &amp; Power Infrastructure · North America</p>
   <h1>Infrastructure-grade<br><strong>energy systems</strong><br>across North America.</h1>
   <p class="hero-sub">AGI&amp;M ASSETS INC. is a Canadian private holding company. Through Energize Solutions Inc. (Texas) and ARCBOS, we deliver EMS platforms, BESS hardware, power equipment supply, and autonomous industrial systems to utilities, EPCs, and Fortune 500 operators.</p>
-  <p class="hero-trust">Active programs with SDG&amp;E · ERCOT · PJM · Black &amp; Veatch · PepsiCo · Hydro-Québec</p>
+  <p class="hero-trust">Active programs with SDG&amp;E · ERCOT · PJM · PepsiCo · Hydro-Québec</p>
   <div class="actions">
     <a href="/capabilities/" class="btn-dark">View Capabilities</a>
     <a href="https://docs.agim.ca" target="_blank" rel="noopener" class="btn-outline">Document Portal</a>
@@ -284,14 +286,14 @@ main{flex:1}
   <div class="clients-grid">
     <div class="client-item"><span class="client-name">SDG&amp;E</span><span class="client-type">Utility · CA</span></div>
     <div class="client-item"><span class="client-name">PepsiCo</span><span class="client-type">Fortune 500 C&amp;I</span></div>
-    <div class="client-item"><span class="client-name">Black &amp; Veatch</span><span class="client-type">Tier 1 EPC</span></div>
-    <div class="client-item"><span class="client-name">Blink Charging</span><span class="client-type">EV Infrastructure</span></div>
-    <div class="client-item"><span class="client-name">Shell</span><span class="client-type">Energy Major</span></div>
+    <div class="client-item"><span class="client-name">Power Electronics</span><span class="client-type">PCS Vendor · Spain</span></div>
+    <div class="client-item"><span class="client-name">SMA</span><span class="client-type">PCS Vendor</span></div>
+    <div class="client-item"><span class="client-name">Sungrow</span><span class="client-type">PCS Vendor</span></div>
     <div class="client-item"><span class="client-name">ERCOT</span><span class="client-type">Grid Operator · TX</span></div>
     <div class="client-item"><span class="client-name">PJM</span><span class="client-type">Grid Operator · East</span></div>
     <div class="client-item"><span class="client-name">Hydro-Québec</span><span class="client-type">Utility · Canada</span></div>
     <div class="client-item"><span class="client-name">LA DWP</span><span class="client-type">Municipal Utility</span></div>
-    <div class="client-item"><span class="client-name">Power Electronics</span><span class="client-type">PCS Vendor · Spain</span></div>
+    <div class="client-item"><span class="client-name">SDG&amp;E / CA Rule 21</span><span class="client-type">IEEE 1547-2018</span></div>
   </div>
 </div></section>
 

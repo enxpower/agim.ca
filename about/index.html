@@ -179,9 +179,9 @@ main{flex:1}
   .clients-grid{grid-template-columns:repeat(3,1fr)}
   .client-item:nth-child(5n){border-right:1px solid var(--border)}
   .client-item:nth-child(3n){border-right:none}
-  .trust-inner{flex-wrap:wrap;gap:0}
-  .trust-item{flex:0 0 50%;border-bottom:1px solid var(--border)}
-  .trust-item:nth-child(2){border-right:none}
+  .trust-inner{display:grid;grid-template-columns:1fr 1fr;gap:0}
+  .trust-item{flex:none;border-right:none;border-bottom:1px solid var(--border);padding:20px 16px}
+  .trust-item:nth-child(odd){border-right:1px solid var(--border)}
   .trust-item:nth-last-child(-n+2){border-bottom:none}
   .docs-row{flex-direction:column;align-items:flex-start}
   .nav-links{display:none}
@@ -216,15 +216,17 @@ main{flex:1}
   .foot-meta{font-size:10px}
   .foot-links a{font-size:10px}
   .foot-links{gap:16px}
-  .trust-inner{flex-direction:column}
-  .trust-item{flex:none;width:100%;border-right:none;border-bottom:1px solid var(--border)}
+  .trust-inner{display:grid;grid-template-columns:1fr 1fr}
+  .trust-item{flex:none;width:100%;border-right:none;border-bottom:1px solid var(--border);padding:18px 12px}
+  .trust-item:nth-child(odd){border-right:1px solid var(--border)}
   .trust-item:last-child{border-bottom:none}
+  .trust-item:nth-last-child(-n+2){border-bottom:none}
   .clients-grid{grid-template-columns:1fr 1fr}
   .client-item:nth-child(3n){border-right:1px solid var(--border)}
   .client-item:nth-child(2n){border-right:none}
   .prog-card{padding:32px 24px}
   .prog-title{font-size:18px}
-  .trust-n{font-size:22px}
+  .trust-n{font-size:24px}
 }
 </style>
 </head>
@@ -239,7 +241,7 @@ main{flex:1}
 <div class="highlight-box"><p>Corporate structure: AGI&amp;M ASSETS INC. (Canada) → Energize Solutions Inc. (Texas, USA) + ARCBOS. All entities 100% privately held.</p></div>
 
 <h2>Operating Subsidiaries</h2>
-<p><strong>Energize Solutions Inc.</strong> — US operating entity (Texas). EMS platforms, BESS hardware, power transformers, and fiber optic supply. Active programs with SDG&amp;E, ERCOT, PJM, Hydro-Québec, Black &amp; Veatch, PepsiCo, Shell, and Blink Charging. 500+ MW deployed since 2019, 20+ active programs per year.</p>
+<p><strong>Energize Solutions Inc.</strong> — US operating entity (Texas). EMS platforms, BESS hardware, power transformers, and fiber optic supply. Active programs with SDG&amp;E, ERCOT, PJM, Hydro-Québec, and PepsiCo. 500+ MW deployed since 2019, 20+ active programs per year.</p>
 <p><strong>ARCBOS</strong> — Autonomous systems subsidiary. Developing the SnowBot autonomous commercial snow removal robot for the North American market. Currently in Pre-A fundraising stage ($2M USD).</p>
 
 <h2>Delivery Model</h2>
