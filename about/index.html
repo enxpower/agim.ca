@@ -87,15 +87,39 @@ a{color:inherit;text-decoration:none}
 .foot-links a:hover{color:#0B2545}
 
 @media(max-width:900px){
-  .w{padding:0 24px}
-  .hero h1{font-size:36px}
+  .w,.nav-inner,.foot-inner{padding-left:24px;padding-right:24px}
+  .hero h1{font-size:34px}
+  .hero p{font-size:14px}
   .grid3,.stats{grid-template-columns:1fr}
-  .col,.stat{border-right:none;padding:28px 0;border-bottom:1px solid rgba(11,37,69,.06)}
+  .col,.stat{border-right:none;padding:24px 0;border-bottom:1px solid rgba(11,37,69,.06)}
   .col:last-child,.stat:last-child{border-bottom:none}
   .col:nth-child(2),.stat:not(:first-child){padding-left:0}
   .docs-row{flex-direction:column;align-items:flex-start;gap:24px}
-  .nav-inner{flex-wrap:wrap;height:auto;padding:16px 0;gap:16px}
-  .nav-links{gap:20px}
+  .nav-inner{flex-wrap:wrap;height:auto;padding:16px 0;gap:12px}
+  .nav-links{gap:16px}
+  .foot-inner{flex-direction:column;gap:20px}
+  .foot-links{flex-direction:row;gap:20px}
+}
+@media(max-width:480px){
+  .w,.nav-inner,.foot-inner{padding-left:16px;padding-right:16px}
+  .hero{padding:48px 0 40px}
+  .hero h1{font-size:28px;letter-spacing:-.02em}
+  .hero p{font-size:13px;margin-bottom:32px}
+  .actions{flex-direction:column;align-items:flex-start;gap:14px}
+  .btn-dark{width:100%;text-align:center;box-sizing:border-box}
+  .eyebrow{font-size:9px}
+  .col-title{font-size:15px}
+  .col-body{font-size:12px}
+  .col{padding:20px 0}
+  .stat-n{font-size:28px}
+  .stat-l{font-size:9px}
+  .page-h1{font-size:28px;margin-bottom:32px}
+  .prose p,.prose li{font-size:14px}
+  .prose h2{font-size:10px}
+  .nav-links{display:none}
+  .nav-links a{font-size:10px}
+  .foot-copy{font-size:10px}
+  .foot-links a{font-size:10px}
 }
 </style>
 </head>
