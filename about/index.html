@@ -19,8 +19,8 @@
 <meta name="twitter:description" content="AGI&M ASSETS INC. corporate structure, operating subsidiaries, and contact."/>
 <meta name="twitter:image" content="https://agim.ca/og-image.png"/>
 <style>*{box-sizing:border-box;margin:0;padding:0}
-html{font-size:16px;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
-body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#0B2545;background:#fff;min-height:100vh;display:flex;flex-direction:column;line-height:1.6;overflow-x:hidden}
+html{font-size:16px;-webkit-font-smoothing:antialiased;scroll-behavior:smooth;overflow-x:hidden;max-width:100vw}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#0B2545;background:#fff;min-height:100vh;display:flex;flex-direction:column;line-height:1.6;overflow-x:hidden;max-width:100vw;width:100%}
 a{color:inherit;text-decoration:none}
 main{flex:1}
 
@@ -47,7 +47,7 @@ main{flex:1}
 .nav-mobile.open{display:flex}
 
 /* HERO */
-.hero{padding:88px 0 72px;border-bottom:1px solid rgba(11,37,69,.06)}
+.hero{padding:88px 0 72px;border-bottom:1px solid rgba(11,37,69,.06);overflow:hidden}
 .eyebrow{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#4A7FB5;margin-bottom:28px}
 .hero h1{font-size:52px;font-weight:300;letter-spacing:-.025em;line-height:1.1;max-width:600px;margin-bottom:24px;color:#0B2545}
 .hero h1 strong{font-weight:600}
@@ -63,8 +63,8 @@ main{flex:1}
 .sec-label{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#4A7FB5;margin-bottom:48px}
 
 /* GRID */
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);min-width:0}
-.col{padding-right:36px;border-right:1px solid rgba(11,37,69,.08);min-width:0;word-wrap:break-word;overflow-wrap:break-word}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);min-width:0;width:100%}
+.col{padding-right:36px;border-right:1px solid rgba(11,37,69,.08);min-width:0;word-wrap:break-word;overflow-wrap:break-word;max-width:100%}
 .col:last-child{border-right:none;padding-right:0;padding-left:36px}
 .col:nth-child(2){padding-left:36px}
 .col-num{font-size:10px;letter-spacing:.12em;color:rgba(11,37,69,.2);margin-bottom:18px}
@@ -72,7 +72,7 @@ main{flex:1}
 .col-body{font-size:13px;color:#6B8BAD;line-height:1.7;word-wrap:break-word}
 
 /* STATS */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(11,37,69,.08);margin-top:56px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(11,37,69,.08);margin-top:56px;min-width:0}
 .stat{padding:32px 32px 0 0;border-right:1px solid rgba(11,37,69,.08)}
 .stat:last-child{border-right:none;padding-right:0}
 .stat:not(:first-child){padding-left:32px}
@@ -89,7 +89,7 @@ main{flex:1}
 .page-eyebrow{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#4A7FB5;margin-bottom:20px}
 .page-h1{font-size:40px;font-weight:300;letter-spacing:-.025em;margin-bottom:48px;max-width:640px;color:#0B2545}
 .page-rule{height:1px;background:rgba(11,37,69,.08);margin-bottom:48px}
-.prose{max-width:720px}
+.prose{max-width:720px;word-wrap:break-word;overflow-wrap:break-word}
 .prose p{font-size:15px;color:#445;line-height:1.8;margin-bottom:20px}
 .prose h2{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#4A7FB5;margin:44px 0 16px;padding-bottom:12px;border-bottom:1px solid rgba(11,37,69,.08)}
 .prose ul{list-style:none;margin-bottom:20px}
