@@ -32,6 +32,12 @@ a{color:inherit;text-decoration:none}
 .nav-links{display:flex;gap:36px;list-style:none}
 .nav-links a{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6B8BAD;transition:color .15s}
 .nav-links a:hover{color:#0B2545}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px;flex-direction:column;gap:5px}
+.nav-toggle span{display:block;width:22px;height:1.5px;background:#0B2545;transition:all .2s}
+.nav-mobile{display:none;position:fixed;top:64px;left:0;right:0;background:#fff;border-bottom:1px solid rgba(11,37,69,.08);z-index:99;padding:16px 24px;flex-direction:column;gap:0}
+.nav-mobile a{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#6B8BAD;padding:14px 0;border-bottom:1px solid rgba(11,37,69,.05);display:block}
+.nav-mobile a:last-child{border-bottom:none}
+.nav-mobile.open{display:flex}
 .nav-btn{font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid #0B2545;padding:8px 18px;color:#0B2545;transition:background .15s,color .15s}
 .nav-btn:hover{background:#0B2545;color:#fff}
 
@@ -132,5 +138,11 @@ a{color:inherit;text-decoration:none}
 <div class="prose"><p>Our programs are structured as long-term infrastructure delivery partnerships with EPCs, utilities, and industrial operators across North America. We work on programs where reliability, documentation, and follow-through matter more than anything else.</p><h2>Energy Management &amp; Storage</h2><p>Active EMS and BESS deployment programs through Energize Solutions Inc. across SDG&amp;E service territory, ERCOT, PJM, and Hydro-Québec. Programs span commercial, industrial, and utility-scale environments. 500+ MW deployed since 2019.</p><h2>Power Transformer Supply</h2><p>Long-term supply framework agreements with EPC and utility clients for EHV, HV, MV, and LV power transformers. Engineered submittal packages, factory acceptance testing, and documented delivery programs.</p><h2>Fiber Optic Infrastructure</h2><p>OSP outdoor cable, campus fiber, and FTTX passive products for utility telecom, broadband EPC, and data center interconnection programs. OTDR test archives and reel-level traceability included.</p><h2>Data Center Power</h2><p>Power interconnect hardware supply programs for hyperscale and AI infrastructure operators. Long-cycle reliability and supply continuity are the primary selection criteria.</p></div>
 </div></main>
 <footer class="foot"><div class="w foot-inner"><span class="foot-copy">© 2019–2026 AGI&amp;M ASSETS INC. All rights reserved.</span><ul class="foot-links"><li><a href="https://docs.agim.ca" target="_blank" rel="noopener">docs.agim.ca</a></li><li><a href="https://www.linkedin.com/in/gongtiejing" target="_blank" rel="noopener">LinkedIn</a></li></ul></div></footer>
+<script>
+function toggleNav(){
+  var m=document.getElementById('navMobile');
+  m.classList.toggle('open');
+}
+</script>
 </body>
 </html>

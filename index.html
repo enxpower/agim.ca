@@ -32,6 +32,12 @@ a{color:inherit;text-decoration:none}
 .nav-links{display:flex;gap:36px;list-style:none}
 .nav-links a{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6B8BAD;transition:color .15s}
 .nav-links a:hover{color:#0B2545}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px;flex-direction:column;gap:5px}
+.nav-toggle span{display:block;width:22px;height:1.5px;background:#0B2545;transition:all .2s}
+.nav-mobile{display:none;position:fixed;top:64px;left:0;right:0;background:#fff;border-bottom:1px solid rgba(11,37,69,.08);z-index:99;padding:16px 24px;flex-direction:column;gap:0}
+.nav-mobile a{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#6B8BAD;padding:14px 0;border-bottom:1px solid rgba(11,37,69,.05);display:block}
+.nav-mobile a:last-child{border-bottom:none}
+.nav-mobile.open{display:flex}
 .nav-btn{font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid #0B2545;padding:8px 18px;color:#0B2545;transition:background .15s,color .15s}
 .nav-btn:hover{background:#0B2545;color:#fff}
 
@@ -164,5 +170,13 @@ a{color:inherit;text-decoration:none}
   </div>
 </div></section></main>
 <footer class="foot"><div class="w foot-inner"><span class="foot-copy">© 2019–2026 AGI&amp;M ASSETS INC. All rights reserved.</span><ul class="foot-links"><li><a href="https://docs.agim.ca" target="_blank" rel="noopener">docs.agim.ca</a></li><li><a href="https://www.linkedin.com/in/gongtiejing" target="_blank" rel="noopener">LinkedIn</a></li></ul></div></footer>
+<script>
+function toggleNav(){
+  var m=document.getElementById('navMobile');
+  var t=document.getElementById('navToggle');
+  m.classList.toggle('open');
+  t.classList.toggle('open');
+}
+</script>
 </body>
 </html>

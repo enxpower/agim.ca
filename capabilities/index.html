@@ -32,6 +32,12 @@ a{color:inherit;text-decoration:none}
 .nav-links{display:flex;gap:36px;list-style:none}
 .nav-links a{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6B8BAD;transition:color .15s}
 .nav-links a:hover{color:#0B2545}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px;flex-direction:column;gap:5px}
+.nav-toggle span{display:block;width:22px;height:1.5px;background:#0B2545;transition:all .2s}
+.nav-mobile{display:none;position:fixed;top:64px;left:0;right:0;background:#fff;border-bottom:1px solid rgba(11,37,69,.08);z-index:99;padding:16px 24px;flex-direction:column;gap:0}
+.nav-mobile a{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#6B8BAD;padding:14px 0;border-bottom:1px solid rgba(11,37,69,.05);display:block}
+.nav-mobile a:last-child{border-bottom:none}
+.nav-mobile.open{display:flex}
 .nav-btn{font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid #0B2545;padding:8px 18px;color:#0B2545;transition:background .15s,color .15s}
 .nav-btn:hover{background:#0B2545;color:#fff}
 
@@ -132,5 +138,11 @@ a{color:inherit;text-decoration:none}
 <div class="prose"><p>AGI&amp;M ASSETS INC. is a Canadian private holding company. Our capabilities are delivered through operating subsidiaries and long-term supply programs across energy infrastructure, power equipment, and autonomous systems in North America.</p><h2>Energy Infrastructure — Energize Solutions Inc.</h2><p>Our primary US operating subsidiary (Texas) delivers EMS platforms, BESS hardware, and power infrastructure for utilities, EPCs, and industrial operators. Active programs across SDG&amp;E, ERCOT, PJM, and Hydro-Québec. 500+ MW deployed since 2019.</p><h2>Power Equipment Supply</h2><p>Long-term supply programs for power transformers (EHV, HV, MV, LV), fiber optic cable, and grid balance-of-system hardware for North American EPC and utility clients. Vendors are qualified. Documentation is engineered.</p><h2>Data Center Power</h2><p>Power interconnect hardware and infrastructure supply for hyperscale and AI data center operators. Focused on density, long-cycle reliability, and mission-critical uptime requirements.</p><h2>Autonomous Systems — ARCBOS</h2><p>Operating subsidiary developing the SnowBot autonomous commercial snow removal robot for the North American market. Currently in Pre-A fundraising stage.</p></div>
 </div></main>
 <footer class="foot"><div class="w foot-inner"><span class="foot-copy">© 2019–2026 AGI&amp;M ASSETS INC. All rights reserved.</span><ul class="foot-links"><li><a href="https://docs.agim.ca" target="_blank" rel="noopener">docs.agim.ca</a></li><li><a href="https://www.linkedin.com/in/gongtiejing" target="_blank" rel="noopener">LinkedIn</a></li></ul></div></footer>
+<script>
+function toggleNav(){
+  var m=document.getElementById('navMobile');
+  m.classList.toggle('open');
+}
+</script>
 </body>
 </html>
