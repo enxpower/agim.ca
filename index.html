@@ -6,7 +6,6 @@
 <title>Energy & Power Infrastructure — AGI&M ASSETS INC.</title>
 <meta name="description" content="AGI&M ASSETS INC. is a Canadian private holding company delivering energy infrastructure, BESS, EMS platforms, and power equipment across North America since 2019. 500+ MW deployed."/>
 <link rel="icon" href="/favicon.ico" sizes="any"/>
-<link rel="apple-touch-icon" href="/assets/icons/app-icon-512.png"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://agim.ca/"/>
 <meta property="og:title" content="Energy & Power Infrastructure — AGI&M ASSETS INC."/>
@@ -15,29 +14,19 @@
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Energy & Power Infrastructure — AGI&M ASSETS INC."/>
-<meta name="twitter:description" content="AGI&M ASSETS INC. is a Canadian private holding company delivering energy infrastructure, BESS, EMS platforms, and power equipment across North America since 2019. 500+ MW deployed."/>
-<meta name="twitter:image" content="https://agim.ca/og-image.png"/>
-<style>*{box-sizing:border-box;margin:0;padding:0}
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
 html{font-size:16px;-webkit-font-smoothing:antialiased;scroll-behavior:smooth;overflow-x:hidden;max-width:100vw}
 body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#0B2545;background:#FAFBFC;min-height:100vh;display:flex;flex-direction:column;line-height:1.6;overflow-x:hidden;word-wrap:break-word}
 a{color:inherit;text-decoration:none}
 main{flex:1}
-
-/* ─── TOKENS ─── */
 :root{
-  --navy:#0B2545;
-  --mid:#1B4F8A;
-  --light:#4A7FB5;
-  --tint:#F0F4F8;
-  --muted:#6B8BAD;
-  --border:rgba(11,37,69,.08);
-  --border-strong:rgba(11,37,69,.14);
+  --navy:#0B2545;--mid:#1B4F8A;--light:#4A7FB5;--tint:#F0F4F8;
+  --muted:#6B8BAD;--border:rgba(11,37,69,.08);--border-strong:rgba(11,37,69,.14);
 }
-
 .w{max-width:1200px;margin:0 auto;padding:0 48px}
 
-/* ─── NAV ─── */
+/* NAV */
 .nav{border-bottom:1px solid var(--border);background:rgba(250,251,252,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);position:sticky;top:0;z-index:100}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:flex;align-items:center;gap:10px}
@@ -52,11 +41,10 @@ main{flex:1}
 .nav-mobile{display:none;position:fixed;top:64px;left:0;right:0;background:#FAFBFC;border-bottom:1px solid var(--border);z-index:99;padding:8px 24px 20px;flex-direction:column}
 .nav-mobile a{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:16px 0;border-bottom:1px solid var(--border);display:block;transition:color .15s}
 .nav-mobile a:last-child{border-bottom:none}
-.nav-mobile a:hover{color:var(--navy)}
 .nav-mobile.open{display:flex}
 
-/* ─── HERO ─── */
-.hero{padding:96px 0 80px;background:#FAFBFC;overflow:hidden;position:relative}
+/* HERO */
+.hero{padding:96px 0 80px;background:#FAFBFC;position:relative}
 .hero::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,rgba(11,37,69,.03) 0%,transparent 60%);pointer-events:none}
 .eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--light);margin-bottom:28px;display:flex;align-items:center;gap:12px}
 .eyebrow::before{content:"";display:inline-block;width:28px;height:1px;background:var(--light)}
@@ -73,15 +61,15 @@ main{flex:1}
 .btn-text{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:inline-flex;align-items:center;gap:8px;transition:color .15s;white-space:nowrap}
 .btn-text:hover{color:var(--navy)}
 
-/* ─── TRUST BAR ─── */
+/* TRUST BAR */
 .trust-bar{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:24px 0;background:#fff}
-.trust-inner{display:flex;align-items:center;justify-content:space-between;gap:0;flex-wrap:nowrap}
-.trust-item{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 24px;border-right:1px solid var(--border);flex:1}
+.trust-inner{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-item{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 24px;border-right:1px solid var(--border)}
 .trust-item:last-child{border-right:none}
 .trust-n{font-size:26px;font-weight:300;letter-spacing:-.03em;color:var(--navy);line-height:1}
 .trust-l{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--light);margin-top:6px;line-height:1.3}
 
-/* ─── SECTIONS ─── */
+/* SECTIONS */
 .sec{padding:80px 0;border-top:1px solid var(--border);background:#fff}
 .sec:first-of-type{border-top:none}
 .sec-alt{background:#FAFBFC}
@@ -89,20 +77,19 @@ main{flex:1}
 .sec-label::before{content:"";display:inline-block;width:24px;height:1px;background:var(--light)}
 .sec-title{font-size:34px;font-weight:300;letter-spacing:-.025em;margin-bottom:48px;max-width:600px;color:var(--navy)}
 
-/* ─── GRID ─── */
+/* GRID3 */
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--border)}
 .col{padding:36px 36px 36px 0;border-right:1px solid var(--border)}
 .col:last-child{border-right:none;padding-right:0;padding-left:36px}
 .col:nth-child(2){padding-left:36px}
 .col-num{font-size:9px;letter-spacing:.14em;color:rgba(11,37,69,.2);margin-bottom:16px;font-weight:600;text-transform:uppercase}
-.col-icon{width:32px;height:32px;margin-bottom:20px;opacity:.7}
 .col-title{font-size:16px;font-weight:600;letter-spacing:-.01em;margin-bottom:10px;color:var(--navy)}
 .col-sub{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--light);margin-bottom:12px}
-.col-body{font-size:13px;color:var(--muted);line-height:1.75;word-wrap:break-word}
+.col-body{font-size:13px;color:var(--muted);line-height:1.75}
 .col-link{display:inline-flex;align-items:center;gap:6px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--light);margin-top:16px;transition:color .15s}
 .col-link:hover{color:var(--navy)}
 
-/* ─── CLIENTS ─── */
+/* CLIENTS */
 .clients-sec{padding:64px 0;border-top:1px solid var(--border);background:#fff}
 .clients-label{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);text-align:center;margin-bottom:36px}
 .clients-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--border)}
@@ -112,16 +99,7 @@ main{flex:1}
 .client-name{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--navy)}
 .client-type{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 
-/* ─── STATS ─── */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border);margin-top:56px}
-.stat{padding:32px 32px 0 0;border-right:1px solid var(--border)}
-.stat:last-child{border-right:none;padding-right:0}
-.stat:not(:first-child){padding-left:32px}
-.stat-n{font-size:36px;font-weight:300;letter-spacing:-.04em;color:var(--navy)}
-.stat-n sup{font-size:18px;vertical-align:super;letter-spacing:0}
-.stat-l{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--light);margin-top:8px}
-
-/* ─── PROGRAMS GRID ─── */
+/* PROG GRID */
 .prog-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
 .prog-card{background:#fff;padding:44px 40px}
 .prog-card:hover{background:var(--tint)}
@@ -131,28 +109,84 @@ main{flex:1}
 .prog-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
 .prog-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--border-strong);padding:4px 10px;color:var(--muted)}
 
-/* ─── DOCS ROW ─── */
+/* DOCS ROW */
 .docs-row{display:flex;align-items:center;justify-content:space-between;padding:56px 0;gap:32px;flex-wrap:wrap;border-top:1px solid var(--border)}
 .docs-row h2{font-size:28px;font-weight:300;letter-spacing:-.02em;margin-bottom:8px;color:var(--navy)}
 .docs-row p{font-size:13px;color:var(--muted)}
 
-/* ─── INNER PAGES ─── */
-.page-wrap{padding:72px 0 96px}
+/* ── INNER PAGES ── */
+.page-wrap{padding:80px 0 120px}
 .page-eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--light);margin-bottom:20px;display:flex;align-items:center;gap:12px}
 .page-eyebrow::before{content:"";display:inline-block;width:24px;height:1px;background:var(--light)}
-.page-h1{font-size:42px;font-weight:300;letter-spacing:-.025em;margin-bottom:48px;max-width:680px;color:var(--navy)}
-.page-rule{height:1px;background:var(--border);margin-bottom:48px}
-.prose{max-width:740px;word-wrap:break-word;overflow-wrap:break-word}
-.prose p{font-size:15px;color:#3A4A5C;line-height:1.85;margin-bottom:20px}
-.prose h2{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--light);margin:52px 0 20px;padding-bottom:12px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
-.prose h2::before{content:"";display:inline-block;width:20px;height:1px;background:var(--light)}
-.prose ul{list-style:none;margin-bottom:20px}
-.prose li{font-size:15px;color:#3A4A5C;line-height:1.8;padding:12px 0;border-bottom:1px solid rgba(11,37,69,.04);display:flex;gap:16px}
-.prose li::before{content:"—";color:var(--light);flex-shrink:0}
-.highlight-box{background:var(--tint);border-left:2px solid var(--mid);padding:24px 28px;margin:32px 0}
-.highlight-box p{margin-bottom:0;font-size:14px;color:var(--navy)}
+.page-h1{font-size:48px;font-weight:300;letter-spacing:-.03em;margin-bottom:0;color:var(--navy);line-height:1.08}
+.page-rule{height:1px;background:var(--border);margin:48px 0}
 
-/* ─── FOOTER ─── */
+/* Statement layout */
+.stmt-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--border)}
+.stmt-col{padding:52px 52px 52px 0;border-right:1px solid var(--border)}
+.stmt-col:last-child{border-right:none;padding-left:52px;padding-right:0}
+.stmt-label{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.stmt-label::before{content:"";display:inline-block;width:16px;height:1px;background:var(--light)}
+.stmt-text{font-size:18px;font-weight:300;line-height:1.7;color:var(--navy);letter-spacing:-.01em}
+.stmt-text strong{font-weight:600}
+
+/* Entity cards */
+.entities{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.entity-card{background:#fff;padding:44px 40px}
+.entity-card:hover{background:var(--tint)}
+.entity-n{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;font-weight:600}
+.entity-name{font-size:20px;font-weight:400;letter-spacing:-.015em;color:var(--navy);margin-bottom:6px}
+.entity-loc{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--light);margin-bottom:20px}
+.entity-body{font-size:14px;color:var(--muted);line-height:1.75}
+.entity-link{display:inline-flex;align-items:center;gap:6px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--light);margin-top:20px;transition:color .15s}
+.entity-link:hover{color:var(--navy)}
+
+/* Contact strip */
+.contact-strip{border-top:1px solid var(--border);padding:52px 0 0;margin-top:52px;display:flex;align-items:flex-start;justify-content:space-between;gap:48px;flex-wrap:wrap}
+.contact-label{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.contact-label::before{content:"";display:inline-block;width:16px;height:1px;background:var(--light)}
+.contact-item{font-size:15px;color:var(--navy);margin-bottom:10px}
+.contact-item a{color:var(--mid);transition:color .15s}
+.contact-item a:hover{color:var(--navy)}
+.contact-item:last-child{margin-bottom:0}
+
+/* Caps grid */
+.caps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border)}
+.cap-cell{background:#fff;padding:36px 32px}
+.cap-cell:hover{background:var(--tint)}
+.cap-n{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;font-weight:600}
+.cap-title{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;letter-spacing:-.01em}
+.cap-sub{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--light);margin-bottom:14px}
+.cap-body{font-size:12px;color:var(--muted);line-height:1.7}
+.cap-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.cap-tag{font-size:9px;letter-spacing:.09em;text-transform:uppercase;border:1px solid var(--border);padding:3px 8px;color:var(--muted)}
+
+/* Programs rows */
+.prog-rows{border-top:1px solid var(--border)}
+.prog-row{display:grid;grid-template-columns:80px 1fr auto;gap:32px;align-items:start;padding:36px 0;border-bottom:1px solid var(--border)}
+.prog-row:last-child{border-bottom:none}
+.prog-row-n{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:4px;font-weight:600}
+.prog-row-title{font-size:16px;font-weight:500;color:var(--navy);margin-bottom:6px;letter-spacing:-.01em}
+.prog-row-body{font-size:13px;color:var(--muted);line-height:1.7}
+.prog-row-tags{display:flex;flex-direction:column;align-items:flex-end;gap:6px;padding-top:2px}
+.prog-row-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--border);padding:4px 10px;color:var(--muted);white-space:nowrap}
+
+/* Markets rows */
+.mkt-rows{border-top:1px solid var(--border)}
+.mkt-row{display:grid;grid-template-columns:1fr 1fr;gap:0;border-bottom:1px solid var(--border)}
+.mkt-row:last-child{border-bottom:none}
+.mkt-left{padding:40px 40px 40px 0;border-right:1px solid var(--border)}
+.mkt-right{padding:40px 0 40px 40px}
+.mkt-n{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;font-weight:600}
+.mkt-title{font-size:18px;font-weight:400;color:var(--navy);margin-bottom:10px;letter-spacing:-.01em}
+.mkt-body{font-size:13px;color:var(--muted);line-height:1.75}
+.mkt-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.mkt-tag{font-size:9px;letter-spacing:.09em;text-transform:uppercase;background:var(--tint);color:var(--mid);padding:3px 9px}
+.mkt-stat-label{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;font-weight:600}
+.mkt-stat-n{font-size:40px;font-weight:200;letter-spacing:-.04em;color:var(--navy);line-height:1;margin-bottom:6px}
+.mkt-stat-sub{font-size:11px;color:var(--light);letter-spacing:.06em}
+
+/* FOOTER */
 .foot{border-top:1px solid var(--border);padding:32px 0;background:#fff}
 .foot-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
 .foot-brand{display:flex;align-items:center;gap:10px}
@@ -161,78 +195,81 @@ main{flex:1}
 .foot-links{display:flex;gap:28px;list-style:none;flex-wrap:wrap}
 .foot-links a{font-size:11px;color:#9ab;letter-spacing:.04em;transition:color .15s}
 .foot-links a:hover{color:var(--navy)}
-.foot-contact{font-size:11px;color:#9ab;letter-spacing:.04em}
 
-/* ─── TABLET 900px ─── */
+/* TABLET */
 @media(max-width:900px){
   .w{padding:0 24px}
   .hero h1{font-size:40px}
-  .hero-sub{font-size:14px}
   .grid3{grid-template-columns:1fr;border-top:none}
   .col{border-right:none;padding:24px 0;border-bottom:1px solid var(--border)}
   .col:last-child{border-bottom:none;padding-left:0}
   .col:nth-child(2){padding-left:0}
-  .stats{grid-template-columns:1fr 1fr}
-  .stat{border-right:none;padding:24px 0;border-bottom:1px solid var(--border)}
-  .stat:not(:first-child){padding-left:0}
+  .trust-inner{grid-template-columns:1fr 1fr}
+  .trust-item:nth-child(2){border-right:none}
+  .trust-item:nth-child(-n+2){border-bottom:1px solid var(--border)}
+  .trust-item:nth-last-child(-n+2){border-bottom:none}
   .prog-grid{grid-template-columns:1fr}
   .clients-grid{grid-template-columns:repeat(3,1fr)}
   .client-item:nth-child(5n){border-right:1px solid var(--border)}
   .client-item:nth-child(3n){border-right:none}
-  .trust-inner{display:grid;grid-template-columns:1fr 1fr;gap:0}
-  .trust-item{flex:none;border-right:none;border-bottom:1px solid var(--border);padding:20px 16px}
-  .trust-item:nth-child(odd){border-right:1px solid var(--border)}
-  .trust-item:nth-last-child(-n+2){border-bottom:none}
   .docs-row{flex-direction:column;align-items:flex-start}
   .nav-links{display:none}
   .nav-btn.nav-btn-desk{display:none}
   .nav-toggle{display:flex}
   .foot-inner{flex-direction:column;align-items:flex-start;gap:16px}
-  .foot-brand{margin-bottom:4px}
+  /* inner pages */
+  .page-wrap{padding:52px 0 80px}
+  .page-h1{font-size:34px}
+  .stmt-grid{grid-template-columns:1fr}
+  .stmt-col{border-right:none;padding:32px 0;border-bottom:1px solid var(--border)}
+  .stmt-col:last-child{padding-left:0;border-bottom:none}
+  .entities{grid-template-columns:1fr}
+  .caps-grid{grid-template-columns:1fr 1fr}
+  .prog-row{grid-template-columns:1fr;gap:8px}
+  .prog-row-n{padding-top:0}
+  .prog-row-tags{align-items:flex-start;flex-direction:row;flex-wrap:wrap}
+  .mkt-row{grid-template-columns:1fr}
+  .mkt-left{border-right:none;padding:28px 0;border-bottom:1px solid var(--border)}
+  .mkt-right{padding:28px 0}
+  .contact-strip{flex-direction:column;gap:28px}
 }
-
-/* ─── MOBILE 480px ─── */
+/* MOBILE */
 @media(max-width:480px){
   .w{padding:0 16px}
   .hero{padding:52px 0 44px}
-  .hero h1{font-size:30px;letter-spacing:-.02em}
+  .hero h1{font-size:30px}
   .hero-sub{font-size:13px;margin-bottom:16px}
   .hero-trust{margin-bottom:36px}
   .actions{flex-direction:column;align-items:stretch;gap:12px}
   .btn-dark,.btn-outline{text-align:center;padding:15px 24px}
   .btn-text{justify-content:center}
-  .eyebrow{font-size:9px}
+  .trust-inner{grid-template-columns:1fr 1fr;padding:0}
+  .trust-item{padding:0 12px}
+  .trust-n{font-size:22px}
   .sec{padding:52px 0}
-  .sec-label{margin-bottom:36px}
   .sec-title{font-size:26px;margin-bottom:32px}
-  .col-title{font-size:15px}
-  .col-body{font-size:12px}
-  .stat-n{font-size:28px}
-  .stat-l{font-size:9px}
-  .stats{grid-template-columns:1fr 1fr;margin-top:32px}
-  .page-h1{font-size:28px;margin-bottom:28px}
-  .prose p{font-size:14px}
-  .docs-row h2{font-size:22px}
-  .foot-meta{font-size:10px}
-  .foot-links a{font-size:10px}
-  .foot-links{gap:16px}
-  .trust-inner{display:grid;grid-template-columns:1fr 1fr}
-  .trust-item{flex:none;width:100%;border-right:none;border-bottom:1px solid var(--border);padding:18px 12px}
-  .trust-item:nth-child(odd){border-right:1px solid var(--border)}
-  .trust-item:last-child{border-bottom:none}
-  .trust-item:nth-last-child(-n+2){border-bottom:none}
   .clients-grid{grid-template-columns:1fr 1fr}
   .client-item:nth-child(3n){border-right:1px solid var(--border)}
   .client-item:nth-child(2n){border-right:none}
   .prog-card{padding:32px 24px}
   .prog-title{font-size:18px}
-  .trust-n{font-size:24px}
+  /* inner pages */
+  .page-wrap{padding:36px 0 60px}
+  .page-h1{font-size:26px}
+  .stmt-text{font-size:16px}
+  .entity-card{padding:28px 20px}
+  .entity-name{font-size:18px}
+  .caps-grid{grid-template-columns:1fr}
+  .cap-cell{padding:24px 16px}
+  .contact-strip{padding-top:32px;margin-top:32px}
+  .contact-item{font-size:14px}
+  .mkt-stat-n{font-size:32px}
 }
 </style>
 </head>
 <body>
-<nav class="nav"><div class="w nav-inner"><a href="/" class="brand"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="11" height="11" fill="#0B2545"/><rect x="14" y="1" width="11" height="11" fill="#4A7FB5"/><rect x="1" y="14" width="11" height="11" fill="#4A7FB5"/><rect x="14" y="14" width="11" height="11" fill="#0B2545"/></svg><span class="brand-name">AGI&amp;M Assets</span></a><ul class="nav-links"><li><a href="/capabilities/">Capabilities</a></li><li><a href="/programs/">Programs</a></li><li><a href="/markets/">Markets</a></li><li><a href="/about/">About</a></li></ul><a href="https://docs.agim.ca" target="_blank" rel="noopener" class="nav-btn nav-btn-desk">Documents</a><button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button></div></nav><div class="nav-mobile" id="navMobile"><a href="/capabilities/">Capabilities</a><a href="/programs/">Programs</a><a href="/markets/">Markets</a><a href="/about/">About</a><a href="https://docs.agim.ca" target="_blank" rel="noopener">Documents</a></div>
-<main style="flex:1">
+<nav class="nav"><div class="w nav-inner"><a href="/" class="brand"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="1" y="1" width="11" height="11" fill="#0B2545"/><rect x="14" y="1" width="11" height="11" fill="#4A7FB5"/><rect x="1" y="14" width="11" height="11" fill="#4A7FB5"/><rect x="14" y="14" width="11" height="11" fill="#0B2545"/></svg><span class="brand-name">AGI&amp;M Assets</span></a><ul class="nav-links"><li><a href="/capabilities/">Capabilities</a></li><li><a href="/programs/">Programs</a></li><li><a href="/markets/">Markets</a></li><li><a href="/about/">About</a></li></ul><a href="https://docs.agim.ca" target="_blank" rel="noopener" class="nav-btn nav-btn-desk">Documents</a><button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button></div></nav><div class="nav-mobile" id="navMobile"><a href="/capabilities/">Capabilities</a><a href="/programs/">Programs</a><a href="/markets/">Markets</a><a href="/about/">About</a><a href="https://docs.agim.ca" target="_blank" rel="noopener">Documents</a></div>
+<main>
 <section class="hero"><div class="w">
   <p class="eyebrow">Energy &amp; Power Infrastructure · North America</p>
   <h1>Infrastructure-grade<br><strong>energy systems</strong><br>across North America.</h1>
@@ -268,15 +305,15 @@ main{flex:1}
       <p class="col-num">02</p>
       <p class="col-title">Power Equipment Supply</p>
       <p class="col-sub">Transformers · Fiber · Grid Hardware</p>
-      <p class="col-body">Long-term supply framework programs for power transformers (EHV, HV, MV, LV), fiber optic cable (OSP / campus / FTTX), and grid balance-of-system hardware. Engineered submittals, factory acceptance testing (FAT), and schedule-committed delivery for North American EPC and utility clients.</p>
+      <p class="col-body">Long-term supply framework programs for power transformers (EHV, HV, MV, LV), fiber optic cable (OSP / campus / FTTX), and grid balance-of-system hardware. Engineered submittals, factory acceptance testing, and schedule-committed delivery for North American EPC and utility clients.</p>
       <a href="/programs/" class="col-link">Active Programs →</a>
     </div>
     <div class="col">
       <p class="col-num">03</p>
       <p class="col-title">ARCBOS</p>
       <p class="col-sub">Autonomous Systems · Pre-A Stage</p>
-      <p class="col-body">Operating subsidiary developing the SnowBot — an autonomous commercial snow removal robot engineered for the North American market. Targeting the US$22.5B North American snow removal industry. Currently in Pre-A fundraising ($2M USD). RaaS pricing model at $120–200K/year per unit.</p>
-      <a href="https://arcbos.com" target="_blank" rel="noopener" class="col-link">ARCBOS Site →</a>
+      <p class="col-body">Operating subsidiary developing the SnowBot — an autonomous commercial snow removal robot for the North American market. Targeting the US$22.5B North American snow removal industry. Currently in Pre-A fundraising. RaaS pricing model.</p>
+      <a href="https://arcbos.com" target="_blank" rel="noopener" class="col-link">arcbos.com →</a>
     </div>
   </div>
 </div></section>
@@ -322,7 +359,7 @@ main{flex:1}
     <div class="prog-card">
       <p class="prog-num">Program 04</p>
       <p class="prog-title">Data Center Power</p>
-      <p class="prog-body">Power interconnect hardware and infrastructure supply for hyperscale and AI data center operators. Focused on density, long-cycle reliability, and mission-critical uptime requirements across NA markets.</p>
+      <p class="prog-body">Power interconnect hardware and infrastructure supply for hyperscale and AI data center operators. Long-cycle reliability and mission-critical uptime requirements across NA markets.</p>
       <div class="prog-tags"><span class="prog-tag">Hyperscale</span><span class="prog-tag">AI Infrastructure</span><span class="prog-tag">Mission Critical</span></div>
     </div>
   </div>
