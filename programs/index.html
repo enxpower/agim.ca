@@ -224,7 +224,9 @@ main{flex:1}
   .stmt-col{border-right:none;padding:32px 0;border-bottom:1px solid var(--border)}
   .stmt-col:last-child{padding-left:0;border-bottom:none}
   .entities{grid-template-columns:1fr}
+  .entity-card{padding:36px 0}
   .caps-grid{grid-template-columns:1fr 1fr}
+  .cap-cell{padding:28px 20px}
   .prog-row{grid-template-columns:1fr;gap:8px}
   .prog-row-n{padding-top:0}
   .prog-row-tags{align-items:flex-start;flex-direction:row;flex-wrap:wrap}
@@ -253,15 +255,26 @@ main{flex:1}
   .client-item:nth-child(2n){border-right:none}
   .prog-card{padding:32px 24px}
   .prog-title{font-size:18px}
-  /* inner pages */
+  /* inner pages — mobile padding fix */
   .page-wrap{padding:36px 0 60px}
   .page-h1{font-size:26px}
   .stmt-text{font-size:16px}
-  .entity-card{padding:28px 20px}
+  /* force all inner-page components to respect .w padding */
+  .stmt-col{padding-left:0 !important;padding-right:0 !important}
+  .entity-card{padding:28px 0}
   .entity-name{font-size:18px}
-  .caps-grid{grid-template-columns:1fr}
-  .cap-cell{padding:24px 16px}
-  .contact-strip{padding-top:32px;margin-top:32px}
+  .entities{gap:0;background:transparent}
+  .entities .entity-card{border-bottom:1px solid var(--border);padding-bottom:32px;margin-bottom:32px}
+  .entities .entity-card:last-child{border-bottom:none;margin-bottom:0}
+  .caps-grid{grid-template-columns:1fr;background:transparent;gap:0}
+  .cap-cell{padding:24px 0;border-bottom:1px solid var(--border)}
+  .cap-cell:last-child{border-bottom:none}
+  .prog-row{padding:24px 0}
+  .prog-row-tags{flex-direction:row;flex-wrap:wrap;align-items:flex-start}
+  .mkt-row{display:block}
+  .mkt-left{padding:28px 0;border-right:none;border-bottom:1px solid var(--border)}
+  .mkt-right{padding:24px 0}
+  .contact-strip{padding-top:32px;margin-top:32px;gap:20px}
   .contact-item{font-size:14px}
   .mkt-stat-n{font-size:32px}
 }
