@@ -255,7 +255,7 @@ img,svg{display:block;max-width:100%}
 .page-rule{height:1px;background:var(--rule);margin-block:var(--sp5)}
 
 /* Two-col statement */
-.stmt{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--rule)}
+.stmt{display:grid;grid-template-columns:1fr 1fr;gap:0}
 .stmt-col{padding-top:var(--sp5);padding-bottom:var(--sp5)}
 .stmt-col:first-child{padding-right:var(--sp6);border-right:1px solid var(--rule)}
 .stmt-col:last-child{padding-left:var(--sp6)}
@@ -306,7 +306,7 @@ img,svg{display:block;max-width:100%}
 }
 
 /* Programs list */
-.prog-list{border-top:1px solid var(--rule)}
+.prog-list{}
 .prog-item{display:grid;grid-template-columns:60px 1fr auto;align-items:start;gap:var(--sp4);padding-block:var(--sp4);border-bottom:1px solid var(--rule)}
 .prog-item:last-child{border-bottom:none}
 .prog-item-n{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;padding-top:4px}
@@ -321,7 +321,7 @@ img,svg{display:block;max-width:100%}
 }
 
 /* Markets list */
-.mkt-list{border-top:1px solid var(--rule)}
+.mkt-list{}
 .mkt-item{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--rule)}
 .mkt-item:last-child{border-bottom:none}
 .mkt-left{padding-top:var(--sp5);padding-bottom:var(--sp5);padding-right:var(--sp5);border-right:1px solid var(--rule)}
@@ -341,9 +341,10 @@ img,svg{display:block;max-width:100%}
 }
 
 /* ── FOOTER ── */
-.foot{border-top:1px solid var(--rule);background:#fff}
+.foot{background:var(--navy);position:relative}
+.foot::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--light)}
 .foot .wrap{
-  height:72px;
+  padding-block:var(--sp6);
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -351,13 +352,13 @@ img,svg{display:block;max-width:100%}
   flex-wrap:wrap;
 }
 .foot-brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
-.foot-name{font-size:13px;font-weight:700;letter-spacing:.02em;color:var(--navy)}
-.foot-copy{font-size:11px;color:#b0b8c4;letter-spacing:.04em}
+.foot-name{font-size:13px;font-weight:700;letter-spacing:.02em;color:#fff}
+.foot-copy{font-size:11px;color:rgba(255,255,255,.3);letter-spacing:.04em}
 .foot-links{display:flex;gap:var(--sp4);list-style:none}
-.foot-links a{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#b0b8c4;transition:color .15s}
-.foot-links a:hover{color:var(--navy)}
+.foot-links a{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.35);transition:color .15s}
+.foot-links a:hover{color:#fff}
 @media(max-width:600px){
-  .foot .wrap{height:auto;padding-block:var(--sp3);flex-direction:column;align-items:flex-start;gap:var(--sp2)}
+  .foot .wrap{padding-block:var(--sp4);flex-direction:column;align-items:flex-start;gap:var(--sp2)}
   .foot-links{gap:var(--sp3)}
 }
 </style>
@@ -403,7 +404,7 @@ img,svg{display:block;max-width:100%}
 
 <footer class="foot">
   <div class="wrap">
-    <div class="foot-brand"><svg width="22" height="22" viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="1" y="1" width="11" height="11" fill="#0B2545"/><rect x="14" y="1" width="11" height="11" fill="#4A7FB5"/><rect x="1" y="14" width="11" height="11" fill="#4A7FB5"/><rect x="14" y="14" width="11" height="11" fill="#0B2545"/></svg><span class="foot-name">AGI&amp;M Assets Inc.</span></div>
+    <div class="foot-brand"><svg width="22" height="22" viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="1" y="1" width="11" height="11" fill="#fff"/><rect x="14" y="1" width="11" height="11" fill="rgba(255,255,255,.4)"/><rect x="1" y="14" width="11" height="11" fill="rgba(255,255,255,.4)"/><rect x="14" y="14" width="11" height="11" fill="#fff"/></svg><span class="foot-name">AGI&amp;M Assets Inc.</span></div>
     <span class="foot-copy">© 2019–2026 AGI&amp;M ASSETS INC.</span>
     <ul class="foot-links" role="list">
       <li><a href="https://docs.agim.ca" target="_blank" rel="noopener">Documents</a></li>
