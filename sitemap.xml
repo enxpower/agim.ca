@@ -6,5 +6,6 @@
   <url><loc>https://agim.ca/programs/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://agim.ca/markets/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://agim.ca/insights/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://agim.ca/insights/intelligence/</loc><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://agim.ca/insights/tools/bess/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-10-25</lastmod></url>
 </urlset>
