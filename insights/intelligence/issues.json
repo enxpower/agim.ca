@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "language": "en",
+  "issues": [
+    {
+      "issue": "2026-w43",
+      "label": "2026 · Week 43",
+      "headline": "Grid funding advances; storage procurement still turns on delivery evidence",
+      "summary": "A U.S. grid-resilience funding announcement, a Canadian draft procurement and changing storage-duration requirements point to different commercial gates.",
+      "published_at": "2026-10-25T14:45:00Z",
+      "url": "/insights/intelligence/2026-w43/"
+    },
+    {
+      "issue": "2026-reference-01",
+      "label": "Launch Reference 01",
+      "headline": "Three evidence gates for a bankable storage opportunity",
+      "summary": "A launch reference on installed capacity, grid access and supplier qualification, grounded in U.S. and Canadian primary sources.",
+      "published_at": "2026-10-25T14:44:00Z",
+      "url": "/insights/intelligence/2026-reference-01/"
+    }
+  ]
+}
