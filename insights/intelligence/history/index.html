@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Historical Energy Market Indicators — AGI&M ASSETS INC.</title>
+<meta name="description" content="An evidence-led English monthly historical archive of U.S. BLS battery, transformer and switchgear producer-price indices."/>
+<link rel="canonical" href="https://agim.ca/insights/intelligence/history/"/>
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://agim.ca/insights/intelligence/history/"/>
+<meta property="og:title" content="Historical Energy Market Indicators — AGI&M ASSETS INC."/>
+<meta property="og:description" content="An evidence-led English monthly historical archive of U.S. BLS battery, transformer and switchgear producer-price indices."/>
+<meta property="og:image" content="https://agim.ca/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AGI&M Assets Inc.","url":"https://agim.ca","logo":"https://agim.ca/og-image.png","description":"A Canadian holding company that owns and develops energy infrastructure, power equipment, and autonomous industrial systems businesses across North America.","foundingDate":"2019","areaServed":["CA","US"],"contactPoint":{"@type":"ContactPoint","email":"info@agim.ca","contactType":"business"},"sameAs":["https://www.linkedin.com/in/gongtiejing"],"subOrganization":[{"@type":"Organization","name":"Energize Solutions Inc.","url":"https://energizeos.com"}]}</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-y:scroll}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#0B2545;background:#FAFBFC;min-height:100vh;overflow-x:hidden;width:100%;max-width:100vw}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+:focus-visible{outline:2px solid #1B4F8A;outline-offset:2px}
+
+:root{
+  --navy:#0B2545;--mid:#1B4F8A;--light:#4A7FB5;--muted:#5E7A99;
+  --tint:#F0F4F8;--rule:rgba(11,37,69,.09);
+  --sp1:8px;--sp2:16px;--sp3:24px;--sp4:32px;--sp5:48px;--sp6:64px;--sp7:88px;--sp8:112px;
+  --gutter:48px;
+}
+@media(max-width:900px){:root{--gutter:24px}}
+@media(max-width:480px){:root{--gutter:20px}}
+
+.wrap{width:100%;max-width:1160px;margin-inline:auto;padding-inline:var(--gutter)}
+
+/* NAV */
+.nav{background:rgba(250,251,252,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--rule);position:sticky;top:0;z-index:200}
+.nav .wrap{height:66px;display:flex;align-items:center;justify-content:space-between;gap:var(--sp3)}
+.brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.brand-name{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--navy)}
+.nav-links{display:flex;gap:var(--sp5);list-style:none}
+.nav-links a{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);transition:color .15s}
+.nav-links a:hover{color:var(--navy)}
+.nav-doc{font-size:10px;letter-spacing:.11em;text-transform:uppercase;border:1px solid var(--navy);padding:9px 22px;color:var(--navy);transition:background .15s,color .15s;white-space:nowrap;flex-shrink:0;font-weight:500}
+.nav-doc:hover{background:var(--navy);color:#fff}
+.nav-burger{display:none;background:none;border:none;cursor:pointer;width:40px;height:40px;flex-direction:column;align-items:center;justify-content:center;gap:5px;flex-shrink:0}
+.nav-burger span{display:block;width:22px;height:1.5px;background:var(--navy);border-radius:1px}
+.nav-drawer{display:none;position:fixed;top:66px;left:0;right:0;background:#FAFBFC;border-bottom:1px solid var(--rule);z-index:199;flex-direction:column;padding:8px var(--gutter) 20px}
+.nav-drawer a{font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);padding:16px 0;border-bottom:1px solid var(--rule);display:block}
+.nav-drawer a:last-child{border-bottom:none}
+.nav-drawer.open{display:flex}
+@media(max-width:900px){.nav-links,.nav-doc{display:none}.nav-burger{display:flex}}
+
+/* HERO */
+.hero{padding-block:var(--sp8) var(--sp7);background:#fff;border-bottom:1px solid var(--rule)}
+.kicker{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--light);margin-bottom:var(--sp4);display:flex;align-items:center;gap:14px}
+.kicker::before{content:"";display:inline-block;width:32px;height:1px;background:var(--light);flex-shrink:0}
+.hero h1{font-size:clamp(34px,5.2vw,58px);font-weight:300;letter-spacing:-.03em;line-height:1.07;margin-bottom:var(--sp4);max-width:740px;color:var(--navy)}
+.hero h1 strong{font-weight:650}
+.hero-sub{font-size:16px;color:var(--muted);line-height:1.8;max-width:560px;margin-bottom:var(--sp5)}
+.hero-actions{display:flex;gap:var(--sp2);flex-wrap:wrap}
+@media(max-width:480px){
+  .hero{padding-block:var(--sp6) var(--sp5)}
+  .hero-sub{font-size:14px}
+  .hero-actions{flex-direction:column}
+}
+
+.btn-solid{font-size:11px;letter-spacing:.11em;text-transform:uppercase;background:var(--navy);color:#fff;padding:15px 34px;transition:opacity .15s;display:inline-block;white-space:nowrap;font-weight:500}
+.btn-solid:hover{opacity:.84}
+.btn-ghost{font-size:11px;letter-spacing:.11em;text-transform:uppercase;border:1px solid rgba(11,37,69,.22);padding:15px 34px;color:var(--navy);display:inline-block;transition:border-color .15s;white-space:nowrap;font-weight:500}
+.btn-ghost:hover{border-color:var(--navy)}
+@media(max-width:480px){.btn-solid,.btn-ghost{width:100%;text-align:center}}
+
+/* METRICS */
+.metrics{background:#fff;border-bottom:1px solid var(--rule)}
+.metrics .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.metric{padding:36px var(--sp3);border-right:1px solid var(--rule);text-align:center}
+.metric:last-child{border-right:none}
+.metric-n{font-size:30px;font-weight:275;letter-spacing:-.03em;color:var(--navy);line-height:1}
+.metric-n sup{font-size:15px;color:var(--light);vertical-align:super}
+.metric-l{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:8px;line-height:1.45}
+@media(max-width:900px){
+  .metrics .wrap{grid-template-columns:1fr 1fr}
+  .metric:nth-child(2){border-right:none}
+  .metric:nth-child(-n+2){border-bottom:1px solid var(--rule)}
+}
+@media(max-width:480px){.metric-n{font-size:25px}.metric{padding:26px 12px}}
+
+/* SECTIONS */
+.sec{background:#fff;border-bottom:1px solid var(--rule)}
+.sec-alt{background:#FAFBFC}
+.sec-pad{padding-block:var(--sp7)}
+.label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--light);margin-bottom:var(--sp5);display:flex;align-items:center;gap:13px}
+.label::before{content:"";display:inline-block;width:26px;height:1px;background:var(--light);flex-shrink:0}
+.sec-h{font-size:clamp(26px,3.2vw,36px);font-weight:300;letter-spacing:-.025em;margin-bottom:var(--sp5);max-width:640px;color:var(--navy);line-height:1.2}
+@media(max-width:480px){.sec-pad{padding-block:var(--sp6) var(--sp5)}}
+
+/* PORTFOLIO 3-col */
+.port{display:grid;grid-template-columns:repeat(3,1fr)}
+.port-col{padding-top:var(--sp5);border-right:1px solid var(--rule)}
+.port-col:last-child{border-right:none}
+.port-col:not(:first-child){padding-left:var(--sp5)}
+.port-col:not(:last-child){padding-right:var(--sp5)}
+.port-n{font-size:9px;letter-spacing:.15em;color:rgba(11,37,69,.22);margin-bottom:var(--sp2);font-weight:600;text-transform:uppercase}
+.port-t{font-size:17px;font-weight:600;letter-spacing:-.01em;margin-bottom:9px;color:var(--navy)}
+.port-s{font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--light);margin-bottom:14px}
+.port-b{font-size:13.5px;color:var(--muted);line-height:1.78}
+.port-link{display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--light);margin-top:var(--sp3);transition:color .15s}
+.port-link:hover{color:var(--navy)}
+@media(max-width:900px){
+  .port{grid-template-columns:1fr}
+  .port-col{border-right:none;padding:var(--sp4) 0;border-bottom:1px solid var(--rule)}
+  .port-col:last-child{border-bottom:none}
+  .port-col:not(:first-child){padding-left:0}
+  .port-col:not(:last-child){padding-right:0}
+}
+
+/* APPROACH — 2-col statements */
+.apr{display:grid;grid-template-columns:1fr 1fr}
+.apr-col{padding-block:var(--sp4)}
+.apr-col:first-child{padding-right:var(--sp6);border-right:1px solid var(--rule)}
+.apr-col:last-child{padding-left:var(--sp6)}
+.apr-label{font-size:9px;letter-spacing:.17em;text-transform:uppercase;color:var(--muted);margin-bottom:var(--sp3);display:flex;align-items:center;gap:11px}
+.apr-label::before{content:"";display:inline-block;width:18px;height:1px;background:var(--light);flex-shrink:0}
+.apr-text{font-size:clamp(15px,2vw,18px);font-weight:300;line-height:1.72;color:var(--navy);letter-spacing:-.008em}
+.apr-text strong{font-weight:600}
+@media(max-width:900px){
+  .apr{grid-template-columns:1fr}
+  .apr-col:first-child{padding-right:0;border-right:none;border-bottom:1px solid var(--rule)}
+  .apr-col:last-child{padding-left:0}
+}
+
+/* MARKETS 4-col */
+.mkts{display:grid;grid-template-columns:repeat(4,1fr)}
+.mkts-col{padding-top:var(--sp4);border-right:1px solid var(--rule)}
+.mkts-col:last-child{border-right:none}
+.mkts-col:not(:first-child){padding-left:var(--sp4)}
+.mkts-col:not(:last-child){padding-right:var(--sp4)}
+.mkts-bar{width:26px;height:2px;background:var(--light);margin-bottom:var(--sp3)}
+.mkts-t{font-size:14.5px;font-weight:600;color:var(--navy);margin-bottom:8px;letter-spacing:-.008em}
+.mkts-b{font-size:12.5px;color:var(--muted);line-height:1.72}
+@media(max-width:900px){
+  .mkts{grid-template-columns:1fr 1fr}
+  .mkts-col{border-right:none;padding:var(--sp3) 0}
+  .mkts-col:nth-child(odd){border-right:1px solid var(--rule);padding-right:var(--sp3)}
+  .mkts-col:nth-child(even){padding-left:var(--sp3)}
+  .mkts-col:nth-child(-n+2){border-bottom:1px solid var(--rule)}
+}
+@media(max-width:480px){
+  .mkts{grid-template-columns:1fr}
+  .mkts-col{border-right:none !important;border-bottom:1px solid var(--rule);padding:var(--sp3) 0 !important}
+  .mkts-col:last-child{border-bottom:none}
+}
+
+/* DOCS ROW */
+.docs-row{padding-block:var(--sp6);display:flex;align-items:center;justify-content:space-between;gap:var(--sp4);flex-wrap:wrap}
+.docs-row h2{font-size:clamp(21px,2.6vw,28px);font-weight:300;letter-spacing:-.02em;margin-bottom:8px;color:var(--navy)}
+.docs-row p{font-size:13.5px;color:var(--muted);max-width:480px}
+@media(max-width:600px){.docs-row{flex-direction:column;align-items:flex-start}.docs-row .btn-solid{width:100%;text-align:center}}
+
+/* INNER PAGES */
+.page{padding-block:var(--sp7) clamp(64px,9vw,128px)}
+.page-kicker{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--light);margin-bottom:var(--sp3);display:flex;align-items:center;gap:13px}
+.page-kicker::before{content:"";display:inline-block;width:26px;height:1px;background:var(--light);flex-shrink:0}
+.page-h1{font-size:clamp(30px,5vw,52px);font-weight:300;letter-spacing:-.03em;line-height:1.08;color:var(--navy)}
+.rule{height:1px;background:var(--rule);margin-block:var(--sp5)}
+
+/* Entities */
+.ents{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule)}
+.ent{background:#fff;padding:var(--sp5)}
+.ent:hover{background:var(--tint)}
+.ent-n{font-size:9px;letter-spacing:.17em;text-transform:uppercase;color:var(--muted);margin-bottom:var(--sp2);font-weight:600}
+.ent-t{font-size:21px;font-weight:400;letter-spacing:-.015em;color:var(--navy);margin-bottom:6px}
+.ent-s{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--light);margin-bottom:var(--sp3)}
+.ent-b{font-size:14px;color:var(--muted);line-height:1.78}
+.ent-link{display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--light);margin-top:var(--sp3);transition:color .15s}
+.ent-link:hover{color:var(--navy)}
+@media(max-width:900px){.ents{grid-template-columns:1fr}}
+@media(max-width:480px){.ent{padding:var(--sp4) 0;background:transparent}.ents{background:transparent;gap:0}.ent+.ent{border-top:1px solid var(--rule)}.ent:hover{background:transparent}.ent-t{font-size:19px}}
+
+/* Caps grid */
+.caps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule)}
+.cap{background:#fff;padding:var(--sp4)}
+.cap:hover{background:var(--tint)}
+.cap-n{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:var(--sp2);font-weight:600}
+.cap-t{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;letter-spacing:-.008em}
+.cap-s{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--light);margin-bottom:13px}
+.cap-b{font-size:12.5px;color:var(--muted);line-height:1.72}
+.cap-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.cap-tag{font-size:9px;letter-spacing:.09em;text-transform:uppercase;border:1px solid var(--rule);padding:4px 9px;color:var(--muted)}
+@media(max-width:900px){.caps{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){
+  .caps{grid-template-columns:1fr;background:transparent;gap:0}
+  .cap{padding:var(--sp4) 0;border-bottom:1px solid var(--rule);background:transparent}
+  .cap:last-child{border-bottom:none}.cap:hover{background:transparent}
+}
+
+/* Program list */
+.plist .pitem{display:grid;grid-template-columns:64px 1fr auto;align-items:start;gap:var(--sp4);padding-block:var(--sp4);border-bottom:1px solid var(--rule)}
+.plist .pitem:last-child{border-bottom:none}
+.pitem-n{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:600;padding-top:4px}
+.pitem-t{font-size:16px;font-weight:600;color:var(--navy);margin-bottom:6px;letter-spacing:-.008em}
+.pitem-b{font-size:13px;color:var(--muted);line-height:1.74}
+.pitem-tags{display:flex;flex-direction:column;gap:6px;align-items:flex-end;padding-top:2px}
+.pitem-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--rule);padding:4px 10px;color:var(--muted);white-space:nowrap}
+@media(max-width:900px){
+  .plist .pitem{grid-template-columns:1fr;gap:var(--sp1)}
+  .pitem-n{padding-top:0}
+  .pitem-tags{flex-direction:row;align-items:flex-start;flex-wrap:wrap;margin-top:var(--sp1)}
+}
+
+/* Markets detail */
+.mlist .mitem{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--rule)}
+.mlist .mitem:last-child{border-bottom:none}
+.mitem-l{padding-block:var(--sp5);padding-right:var(--sp5);border-right:1px solid var(--rule)}
+.mitem-r{padding-block:var(--sp5);padding-left:var(--sp5)}
+.mitem-n{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;font-weight:600}
+.mitem-t{font-size:18px;font-weight:400;color:var(--navy);margin-bottom:10px;letter-spacing:-.01em}
+.mitem-b{font-size:13px;color:var(--muted);line-height:1.76}
+.mitem-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:var(--sp2)}
+.mitem-tag{font-size:9px;letter-spacing:.09em;text-transform:uppercase;background:var(--tint);color:var(--mid);padding:4px 10px}
+.mstat-l{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:var(--sp3);font-weight:600}
+.mstat-n{font-size:clamp(32px,4vw,44px);font-weight:200;letter-spacing:-.04em;color:var(--navy);line-height:1;margin-bottom:7px}
+.mstat-s{font-size:11px;color:var(--light);letter-spacing:.06em}
+@media(max-width:900px){
+  .mlist .mitem{grid-template-columns:1fr}
+  .mitem-l{padding-right:0;padding-bottom:var(--sp3);border-right:none;border-bottom:1px solid var(--rule)}
+  .mitem-r{padding-left:0;padding-top:var(--sp3)}
+}
+
+/* FOOTER */
+.foot{background:var(--navy);position:relative}
+.foot::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--light)}
+.foot .wrap{padding-block:var(--sp5);display:flex;align-items:center;justify-content:space-between;gap:var(--sp3);flex-wrap:wrap}
+.foot-brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.foot-name{font-size:13px;font-weight:700;letter-spacing:.02em;color:#fff}
+.foot-copy{font-size:11px;color:rgba(255,255,255,.32);letter-spacing:.04em}
+.foot-links{display:flex;gap:var(--sp4);list-style:none}
+.foot-links a{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,255,255,.38);transition:color .15s}
+.foot-links a:hover{color:#fff}
+@media(max-width:600px){
+  .foot .wrap{flex-direction:column;align-items:flex-start;gap:var(--sp2);padding-block:var(--sp4)}
+  .foot-links{gap:var(--sp3)}
+}
+</style>
+<style>
+.archive-lead{max-width:860px;font-size:16px;line-height:1.85;color:var(--muted)}
+.archive-meta{font-size:12px;font-weight:600;letter-spacing:.055em;line-height:1.7;color:var(--muted);padding-top:12px}
+.archive-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:28px}
+.archive-section{padding-block:78px;background:#F7F9FB}
+.archive-title{font-size:clamp(29px,4.2vw,44px);line-height:1.2;font-weight:500;letter-spacing:-.035em;margin:17px 0 24px}
+.archive-grid{display:grid;gap:22px;margin-top:38px}
+.archive-record{background:white;border:1px solid var(--rule);padding:32px;min-width:0}
+.archive-record-head{display:flex;justify-content:space-between;gap:28px;align-items:flex-start;flex-wrap:wrap}
+.archive-series-id{font:700 11px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--mid);letter-spacing:.07em}
+.archive-record h3{font-size:24px;font-weight:600;letter-spacing:-.02em;color:var(--navy);margin:12px 0}
+.archive-snapshot-delta{font-size:13px;line-height:1.7;color:var(--muted);max-width:280px}
+.archive-record table{width:100%;border-collapse:collapse;margin:20px 0;font-variant-numeric:tabular-nums}
+.archive-record th,.archive-record td{padding:14px 13px;border-bottom:1px solid var(--rule);text-align:left;font-size:13px}
+.archive-record th{font-size:10px;letter-spacing:.095em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.archive-record td:nth-child(2){font-size:17px;font-weight:600;color:var(--navy)}
+.archive-record td:last-child a{color:var(--mid);text-decoration:underline;text-underline-offset:4px}
+.archive-note{max-width:1040px;font-size:13px;line-height:1.8;color:var(--muted)}
+.archive-source{display:inline-block;font-size:13px;font-weight:700;color:var(--mid);text-decoration:underline;text-underline-offset:4px;margin-top:7px}
+.archive-method{padding-block:80px}
+.archive-method-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 55px;margin-top:30px}
+.archive-method-grid h3{font-size:20px;line-height:1.45;margin:10px 0;color:var(--navy)}
+.archive-method-grid p,.archive-footer{font-size:14px;line-height:1.9;color:var(--muted)}
+.archive-footer{border-top:1px solid var(--rule);margin-top:38px;padding-top:25px}
+@media(max-width:850px){.archive-method-grid{grid-template-columns:1fr}.archive-record{padding:24px}}
+@media(max-width:540px){.archive-actions a{width:100%;text-align:center}.archive-record{padding:21px 16px}.archive-record th,.archive-record td{padding:12px 5px;font-size:11px}.archive-record td:nth-child(2){font-size:14px}.archive-record th:nth-child(4),.archive-record td:nth-child(4){display:none}.archive-title{font-size:30px}}
+</style></head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a href="/" class="brand" aria-label="AGI&M Assets home"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="1" y="1" width="11" height="11" fill="#0B2545"/><rect x="14" y="1" width="11" height="11" fill="#4A7FB5"/><rect x="1" y="14" width="11" height="11" fill="#4A7FB5"/><rect x="14" y="14" width="11" height="11" fill="#0B2545"/></svg><span class="brand-name">AGI&amp;M Assets</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="/capabilities/">Capabilities</a></li>
+      <li><a href="/programs/">Programs</a></li>
+      <li><a href="/markets/">Markets</a></li>
+      <li><a href="/insights/">Insights</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+    <a href="https://docs.agim.ca" target="_blank" rel="noopener" class="nav-doc">Documents</a>
+    <button class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-drawer" id="drawer" aria-label="Mobile">
+  <a href="/capabilities/">Capabilities</a>
+  <a href="/programs/">Programs</a>
+  <a href="/markets/">Markets</a>
+  <a href="/insights/">Insights</a>
+  <a href="/about/">About</a>
+  <a href="https://docs.agim.ca" target="_blank" rel="noopener">Documents</a>
+</div>
+<main><section class="hero"><div class="wrap">
+<p class="kicker">AGI&amp;M / Energy Intelligence Archive</p>
+<h1>Three data periods. <strong>Eight monitoring issues.</strong></h1>
+<p class="archive-lead">A source-traceable history of official U.S. manufacturing and storage-battery price indices captured in AGI&amp;M's weekly North American energy monitoring. The archive consolidates repeated monthly observations instead of presenting unchanged weekly readings as new market movements.</p>
+<p class="archive-meta">Coverage: July–September 2026 · Source issues W36–W43 · Observations are preliminary and may be revised.</p>
+<div class="archive-actions"><a class="btn-solid" href="#archive-series">Inspect monthly observations</a><a class="btn-ghost" href="/insights/intelligence/">Latest Energy Intelligence</a></div>
+</div></section>
+<section class="sec archive-section" id="archive-series"><div class="wrap">
+<p class="kicker">Historical Indicators</p><h2 class="archive-title">One consistent series at a time.</h2>
+<p class="archive-lead">Each panel presents three separately dated readings collected from the existing energy-intelligence archive and links to the original BLS series. Changes within one series may be informative; absolute index values across different series are not directly comparable.</p>
+<div class="archive-grid"><article class="archive-record"><div class="archive-record-head"><div><p class="archive-series-id">WPU117901 / BLS PROXY</p><h3>U.S. Storage Battery Producer Price Index</h3></div><p class="archive-snapshot-delta">Jul–Sep within-series observed index change: +0.12%. This is not equipment transaction pricing.</p></div><table><thead><tr><th scope="col">Data month</th><th scope="col">Index reading</th><th scope="col">Year over year</th><th scope="col">First seen</th></tr></thead><tbody><tr><td>2026-07</td><td>263.472</td><td>+2.88%</td><td>W36</td></tr><tr><td>2026-08</td><td>263.795</td><td>+2.64%</td><td>W38</td></tr><tr><td>2026-09</td><td>263.788</td><td>+1.52%</td><td>W43</td></tr></tbody></table><p class="archive-note">Broad storage-battery producer-price proxy. Not a lithium cell spot price, BESS quotation, or purchase contract. Values are historical preliminary readings and may later be revised.</p><a class="archive-source" href="https://data.bls.gov/timeseries/WPU117901" target="_blank" rel="noopener noreferrer">Verify original BLS time series</a></article><article class="archive-record"><div class="archive-record-head"><div><p class="archive-series-id">PCU335311335311 / BLS PROXY</p><h3>U.S. Electric Power Transformer Manufacturing PPI</h3></div><p class="archive-snapshot-delta">Jul–Sep within-series observed index change: +0.05%. This is not equipment transaction pricing.</p></div><table><thead><tr><th scope="col">Data month</th><th scope="col">Index reading</th><th scope="col">Year over year</th><th scope="col">First seen</th></tr></thead><tbody><tr><td>2026-07</td><td>474.830</td><td>+7.78%</td><td>W36</td></tr><tr><td>2026-08</td><td>475.065</td><td>+7.83%</td><td>W38</td></tr><tr><td>2026-09</td><td>475.065</td><td>+7.83%</td><td>W43</td></tr></tbody></table><p class="archive-note">Transformer manufacturing price-pressure proxy. Not a project procurement price or delivery lead-time estimate. Values are historical preliminary readings and may later be revised.</p><a class="archive-source" href="https://data.bls.gov/timeseries/PCU335311335311" target="_blank" rel="noopener noreferrer">Verify original BLS time series</a></article><article class="archive-record"><div class="archive-record-head"><div><p class="archive-series-id">PCU335313335313 / BLS PROXY</p><h3>U.S. Switchgear Manufacturing PPI</h3></div><p class="archive-snapshot-delta">Jul–Sep within-series observed index change: +4.41%. This is not equipment transaction pricing.</p></div><table><thead><tr><th scope="col">Data month</th><th scope="col">Index reading</th><th scope="col">Year over year</th><th scope="col">First seen</th></tr></thead><tbody><tr><td>2026-07</td><td>394.814</td><td>+8.55%</td><td>W36</td></tr><tr><td>2026-08</td><td>411.453</td><td>+13.32%</td><td>W38</td></tr><tr><td>2026-09</td><td>412.235</td><td>+12.32%</td><td>W43</td></tr></tbody></table><p class="archive-note">Switchgear manufacturing proxy. Not a product-specific quote, certification or supply-availability indicator. Values are historical preliminary readings and may later be revised.</p><a class="archive-source" href="https://data.bls.gov/timeseries/PCU335313335313" target="_blank" rel="noopener noreferrer">Verify original BLS time series</a></article></div>
+</div></section>
+<section class="sec archive-method"><div class="wrap">
+<p class="kicker">Original Research Method</p><h2 class="archive-title">How the monthly archive was constructed.</h2>
+<div class="archive-method-grid">
+<article><h3>01 / Deduplicate repeated weekly snapshots</h3><p>The upstream system produced eight dated monitoring issues during the available period, but these contained just three distinct BLS reference months for the selected indicators. Each monthly reading appears once here, with the earliest weekly issue in which it was observed recorded alongside it.</p></article>
+<article><h3>02 / Preserve source and revision risk</h3><p>The original data packages identify each indicator as a price-pressure proxy, not a market transaction or supplier quote. All three series link to the U.S. Bureau of Labor Statistics. These are historical collected readings, not a claim that the live official BLS database still displays exactly the same preliminary values.</p></article>
+<article><h3>03 / Interpret movements carefully</h3><p>A change in an index may suggest upstream manufacturing price pressure; it cannot establish a project's negotiated BESS price, vendor delivery schedule, warranty, grid connection or commissioning status. Index series can be revised and have differing product coverage or base periods.</p></article>
+<article><h3>04 / Separate facts from commercial actions</h3><p>This public archive shows limited numerical evidence and methodology. Internal sales leads, business-development instructions, and unsupported project-stage announcements have not been transferred from the historical reports. No automatically generated unreviewed weekly article is syndicated to the advertising inventory.</p></article>
+</div>
+<p class="archive-footer">Research scope: producer price index proxies captured from previous official-series references. This publication is educational analysis; it is neither an engineering specification nor an equipment price quotation.</p>
+<div class="archive-actions"><a class="btn-solid" href="/insights/tools/bess/">BESS Engineering Tools</a><a class="btn-ghost" href="/insights/">All Insights</a></div>
+</div></section></main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-brand"><svg width="22" height="22" viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="1" y="1" width="11" height="11" fill="#fff"/><rect x="14" y="1" width="11" height="11" fill="rgba(255,255,255,.42)"/><rect x="1" y="14" width="11" height="11" fill="rgba(255,255,255,.42)"/><rect x="14" y="14" width="11" height="11" fill="#fff"/></svg><span class="foot-name">AGI&amp;M Assets Inc.</span></div>
+    <span class="foot-copy">© 2019–2026 AGI&amp;M ASSETS INC.</span>
+    <ul class="foot-links" role="list">
+      <li><a href="https://docs.agim.ca" target="_blank" rel="noopener">Documents</a></li>
+      <li><a href="https://www.linkedin.com/in/gongtiejing" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+<script>function toggleNav(){const d=document.getElementById('drawer'),b=document.getElementById('burger');b.setAttribute('aria-expanded',d.classList.toggle('open'))}</script>
+</body>
+</html>
