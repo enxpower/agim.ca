@@ -1,0 +1,9 @@
+evaluation_line,required_evidence,bidder,offered_value,supplier_document_and_revision,status,clarification_owner,clarification_due,notes
+Service and AC meter,"Net MW and MWh; duty; meter ID; contract year; environment",,,,Not supplied,,,
+Battery and PCS configuration,"Exact model and revision; quantity; DC nameplate; SOC; continuous power; one-line",,,,Not supplied,,,
+Energy guarantee,"Beginning and end-of-term AC energy; degradation; augmentation; auxiliaries",,,,Not supplied,,,
+Safety and listing,"Configuration-specific listing; UL 9540A report scope; installation limitations",,,,Not supplied,,,
+Grid interface,"PCS model; studies; reactive capability; utility responsibilities",,,,Not supplied,,,
+Installation boundary,"Transformer; switchgear; civil works; cabling; fire interfaces; EMS; responsibility matrix",,,,Not supplied,,,
+FAT SAT and warranty,"Approved procedures; pass criteria; witnesses; service response; exclusions",,,,Not supplied,,,
+Commercial normalization,"Currency; price date; Incoterm; freight; taxes; duties; external works; estimate evidence",,,,Not supplied,,,

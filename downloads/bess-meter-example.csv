@@ -1,0 +1,5 @@
+hour,duration_hours,gross_discharge_ac_mw,auxiliary_mw,other_ac_losses_mw,net_pcc_mw,net_pcc_mwh
+1,1,10.40,0.20,0.10,10.10,10.10
+2,1,10.35,0.20,0.10,10.05,10.05
+3,1,10.30,0.20,0.10,10.00,10.00
+4,1,10.25,0.20,0.10,9.95,9.95
