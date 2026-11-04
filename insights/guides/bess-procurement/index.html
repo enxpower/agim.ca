@@ -324,6 +324,58 @@ img,svg{display:block;max-width:100%}
 <tr><td>How is performance sustained?</td><td>Warranty limits, degradation schedule, service response and spare-parts availability</td><td>Nominal capacity presented as lifetime usable energy</td></tr>
 </tbody></table></div>
 </div></section>
+
+<section class="guide-section guide-muted" id="worked-example"><div class="wrap">
+<p class="kicker">Worked Procurement Example / Reproducible Calculation</p>
+<h2>What does a 10 MW / four-hour AC delivery requirement actually imply?</h2>
+<p class="guide-intro">The numbers below are a <strong>hypothetical engineering illustration</strong>, not an AGI&amp;M project, supplier quotation, product rating or guaranteed design. A project engineer must replace every assumption with the actual meter boundary, operating envelope and vendor evidence before issuing an RFQ.</p>
+<div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">Input at the specified boundary</th><th scope="col">Illustrative value</th><th scope="col">What a real tender must establish</th></tr></thead><tbody>
+<tr><td>Net export required at the point of common coupling (PCC)</td><td>10.0 MW for 4.0 h</td><td>Minimum sustained net AC export and duration, including applicable temperature and voltage ranges</td></tr>
+<tr><td>Auxiliary load during discharge</td><td>0.20 MW, constant</td><td>Whether HVAC and site auxiliaries are measured behind the export meter; measured operating profile</td></tr>
+<tr><td>DC-to-AC discharge-path efficiency</td><td>92% (0.92)</td><td>Guaranteed efficiency at the relevant discharge rate, transformer boundary and operating conditions</td></tr>
+<tr><td>Permitted usable fraction of DC nameplate</td><td>90% (0.90)</td><td>Usable state-of-charge window and BMS operating restrictions</td></tr>
+<tr><td>End-of-warranty retained capacity fraction</td><td>80% (0.80)</td><td>Contractual capacity-retention schedule, test method and throughput/temperature exclusions</td></tr>
+</tbody></table></div>
+<div class="guide-columns"><div>
+<h3>Step 1 — Define the actual service</h3>
+<p>At the PCC, net delivered energy is <strong>10.0 MW × 4.0 h = 40.0 MWh AC</strong>. With a 0.20 MW behind-meter auxiliary demand, the discharge path must supply <strong>(10.0 + 0.20) × 4.0 = 40.8 MWh AC</strong> before auxiliary consumption.</p>
+<h3>Step 2 — Translate AC output to usable DC</h3>
+<p>Under the assumed 92% DC-to-AC efficiency, usable discharged battery energy is <strong>40.8 ÷ 0.92 = 44.35 MWh DC</strong>. With a 90% usable nameplate fraction, an idealized beginning-of-life requirement is <strong>44.35 ÷ 0.90 = 49.28 MWh DC nameplate</strong>.</p>
+</div><div>
+<h3>Step 3 — Test the end-of-warranty guarantee</h3>
+<p>If the same four-hour net export must remain possible after the assumed 20% capacity loss, the illustrative installed beginning-of-life nameplate becomes <strong>49.28 ÷ 0.80 = 61.59 MWh DC</strong>. This is not an equipment selection: power, current, thermal, SOC and calendar-life restrictions can make the result insufficient.</p>
+<h3>Step 4 — State what the estimate excludes</h3>
+<p>The example assumes constant load, constant conversion efficiency and a single discharge. It omits temperature and altitude derating, battery voltage and C-rate limits, reserve requirements, availability, charging losses, degradation shape, augmentation timing, grid-code constraints and project contingency. Test these separately rather than hiding them inside an unexplained multiplier.</p>
+</div></div>
+<div class="guide-reference"><strong>Reproduce the example</strong><p>Use this explicit relationship for the stated assumptions: installed DC nameplate (MWh) = [(net PCC MW + behind-meter auxiliary MW) × discharge hours] ÷ [DC-to-AC efficiency × usable DC fraction × retained-capacity fraction]. Substituting 10.0, 0.20, 4.0, 0.92, 0.90 and 0.80 gives approximately <strong>61.6 MWh DC</strong>. If an RFQ guarantees only beginning-of-life output, remove the retained-capacity factor and specify that limitation explicitly.</p><a href="/insights/tools/bess/">Compare with the BESS Engineering Calculators</a></div>
+</div></section>
+<section class="guide-section" id="bid-comparison"><div class="wrap">
+<p class="kicker">Procurement Decision Tool / Bid Normalization</p>
+<h2>A bid comparison that exposes exclusions before the price comparison.</h2>
+<p class="guide-intro">A defensible shortlist uses an identical reference duty and acceptance boundary for every bidder. Record the supplier document and revision beside each claim; mark absent evidence <strong>Not supplied</strong> rather than treating a brochure statement as a verified guarantee.</p>
+<div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">Evaluation line</th><th scope="col">Comparable evidence required from every bidder</th><th scope="col">Decision if missing</th></tr></thead><tbody>
+<tr><td>1. Service and AC meter</td><td>Net MW and MWh at named PCC meter, interval test and environmental limits</td><td>Cannot compare delivered-energy offers</td></tr>
+<tr><td>2. Battery and PCS configuration</td><td>Exact model/revision, quantity, DC nameplate, usable SOC, PCS continuous MW and one-line diagram</td><td>Cannot establish product or power equivalence</td></tr>
+<tr><td>3. Energy guarantee</td><td>Beginning- and end-of-term AC energy, discharge profile, degradation, augmentation and auxiliaries</td><td>Treat lifetime performance as unverified</td></tr>
+<tr><td>4. Safety and listing</td><td>System listing scope, UL 9540A test level/revision, configuration match and local authority requirements</td><td>Do not assume approval from cell-only evidence</td></tr>
+<tr><td>5. Grid interface</td><td>PCS grid-code settings, models, protection studies, reactive capability and utility review responsibilities</td><td>Exclude interconnection acceptance from the claimed turnkey scope</td></tr>
+<tr><td>6. Installation boundary</td><td>MV transformer, switchgear, cable, HVAC, fire detection, EMS gateway, foundations and responsibility matrix</td><td>Flag missing scope as owner/EPC cost exposure</td></tr>
+<tr><td>7. FAT, SAT and warranty</td><td>Witness points, measurable pass criteria, documentation, service response and warranty exclusions</td><td>Withhold evidence-based acceptance</td></tr>
+<tr><td>8. Commercial normalization</td><td>Incoterm, taxes/duties, schedule, installation exclusions, warranties and total landed/integrated cost</td><td>Do not rank bids solely on quoted $/kWh</td></tr>
+</tbody></table></div>
+<div class="guide-columns"><div><h3>Pass/fail first</h3><p>Before evaluating the lowest bid, require a matching AC service definition, identifiable certified/tested configuration, feasible interconnection path, complete responsibility assignment and measurable acceptance criteria. Document every exception in a dated clarification register.</p></div><div><h3>Then compare cost and risk</h3><p>Compare normalized installed cost and contractual AC energy at the same life stage and test boundary. Keep unresolved civil, utility, logistics and commissioning costs as explicit exclusions or owner contingencies; do not silently assign them a zero value.</p></div></div>
+</div></section>
+<section class="guide-section guide-muted" id="standards-evidence"><div class="wrap">
+<p class="kicker">Source and Methodology Notes</p><h2>Standards references are not equipment approvals.</h2>
+<p class="guide-intro">UL 9540 addresses the evaluated energy-storage system. UL 9540A is a fire-propagation test method, not a standalone blanket certification of every installation. NFPA 855 addresses installation safety; applicability depends on the adopted edition, jurisdiction and authority having jurisdiction. Demand the offered configuration's actual listing, reports, limitations and site-specific acceptance.</p>
+<div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">Authoritative reference</th><th scope="col">Use in an engineering review</th></tr></thead><tbody>
+<tr><td><a href="https://www.ul.com/services/energy-storage-system-testing-and-certification" rel="noopener noreferrer">UL Solutions — ESS testing and certification</a></td><td>Distinguish system-level certification scope from component and inverter standards</td></tr>
+<tr><td><a href="https://www.ul.com/services/ul-9540a-test-method" rel="noopener noreferrer">UL Solutions — UL 9540A test method</a></td><td>Check tested level, relevant edition and offered equipment configuration</td></tr>
+<tr><td><a href="https://www.nfpa.org/codes-and-standards/nfpa-standard-development/855" rel="noopener noreferrer">NFPA — Standard 855</a></td><td>Identify installation rules and adopted-edition issues to confirm with the local authority</td></tr>
+</tbody></table></div>
+<p>Editorial responsibility: AGI&amp;M Assets Inc. publishes this engineering reference for preliminary supplier comparison. The calculation is transparent arithmetic based solely on the listed hypothetical assumptions; no field trial, proprietary customer data, supplier certification, installation approval or site-specific professional engineering sign-off is claimed. Review the linked standards publishers and request the latest enforceable local requirements before contracting.</p>
+</div></section>
+
 <section class="guide-section"><div class="wrap">
 <p class="kicker">Capacity and Cost Logic</p><h2>Translate load requirements into an equipment boundary.</h2>
 <div class="guide-columns"><div><h3>Start with the operating objective</h3><p>Peak shaving, backup power, energy arbitrage and renewable smoothing can place different demands on cycling frequency, state-of-charge reserve, inverter behavior and control architecture. An early BESS request should state the dominant duty and the constraints of the point of common coupling.</p><p>For constant-power operation, duration is delivered AC energy divided by sustained AC power. Nominal DC capacity must also accommodate usable depth of discharge and discharge-path efficiency. These first-pass calculations exclude the actual project deratings listed above.</p></div>
