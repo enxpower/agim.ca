@@ -313,6 +313,54 @@ img,svg{display:block;max-width:100%}
 .g-foot-bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:var(--sp5);padding-top:var(--sp3);display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--sp2);font-size:13px}
 @media(max-width:900px){.g-foot-grid{grid-template-columns:1fr 1fr}.g-foot-brand-col{grid-column:1/-1}}
 @media(max-width:480px){.g-foot-grid{grid-template-columns:1fr}}
+
+/* Navigation upgrade: larger, higher-contrast links; solid contact button */
+.nav .wrap{height:72px}
+.brand-name{font-size:13px;letter-spacing:.12em}
+.nav-links a{font-size:13px;letter-spacing:.06em;color:#33475B;font-weight:500}
+.nav-links a:hover{color:#0B2545}
+.nav-doc{background:#0B2545;color:#fff;font-size:12px;padding:12px 22px;letter-spacing:.08em}
+.nav-doc:hover{background:#1B4F8A;border-color:#1B4F8A}
+.nav-drawer a{font-size:15px;color:#0B2545}
+/* Figures band */
+.g-figs-band{border-bottom:1px solid var(--rule);background:#fff}
+.g-figs{display:grid;grid-template-columns:repeat(4,1fr)}
+.g-fig:first-child{padding-left:0}
+.g-fig{padding:var(--sp4) var(--sp3);border-right:1px solid var(--rule)}
+.g-fig:last-child{border-right:0}
+.g-fig-n{font-size:clamp(28px,3.4vw,40px);font-weight:250;letter-spacing:-.03em;line-height:1;color:#0B2545}
+.g-fig-l{font-size:13px;color:#5E7A99;margin-top:8px;line-height:1.45}
+@media(max-width:900px){.g-figs{grid-template-columns:1fr 1fr}.g-fig:nth-child(2){border-right:0}.g-fig:nth-child(-n+2){border-bottom:1px solid var(--rule)}}
+/* Thesis */
+.g-thesis{counter-reset:t;display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--rule)}
+.g-thesis article{counter-increment:t;padding:var(--sp4) var(--sp4) var(--sp4) 0;border-bottom:1px solid var(--rule)}
+.g-thesis article:nth-child(odd){padding-right:var(--sp5);border-right:1px solid var(--rule)}
+.g-thesis article:nth-child(even){padding-left:var(--sp5)}
+.g-thesis article::before{content:counter(t,decimal-leading-zero);display:block;font-size:12px;letter-spacing:.14em;color:#1B4F8A;font-weight:700;margin-bottom:var(--sp2)}
+.g-thesis h3{font-size:22px;font-weight:400;letter-spacing:-.01em;color:#0B2545;margin-bottom:var(--sp1)}
+.g-thesis p{color:#5E7A99;line-height:1.7}
+@media(max-width:800px){.g-thesis{grid-template-columns:1fr}.g-thesis article,.g-thesis article:nth-child(odd),.g-thesis article:nth-child(even){padding:var(--sp4) 0;border-right:0}}
+/* Domain expertise */
+.g-domain{display:grid;grid-template-columns:4fr 8fr;gap:var(--sp5);padding-block:var(--sp4);border-top:1px solid var(--rule)}
+.g-domain:first-of-type{border-top:0}
+.g-domain h3{font-size:22px;font-weight:400;color:#0B2545}
+.g-domain .g-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:var(--sp2)}
+.g-tag{font-size:12px;padding:5px 10px;border:1px solid var(--rule);background:#fff;color:#33475B;white-space:nowrap}
+@media(max-width:800px){.g-domain{grid-template-columns:1fr;gap:var(--sp2)}.g-tag{white-space:normal}}
+/* Two markets table */
+.g-table-wrap{overflow-x:auto;border:1px solid var(--rule);background:#fff}
+.g-table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+.g-table th,.g-table td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--rule);vertical-align:top}
+.g-table thead th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5E7A99;background:#F0F4F8}
+.g-table tbody th{font-weight:600;color:#0B2545;width:22%}
+.g-table tr:last-child th,.g-table tr:last-child td{border-bottom:0}
+/* Footprint */
+.g-foot-print{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp3)}
+.g-place{border-left:2px solid #1B4F8A;padding:4px 0 4px var(--sp3)}
+.g-place h3{font-size:16px;font-weight:600;color:#0B2545}
+.g-place p{font-size:14px;color:#5E7A99;margin-top:6px;line-height:1.6}
+@media(max-width:800px){.g-foot-print{grid-template-columns:1fr}}
+.g-note{font-size:13px;color:#5E7A99;margin-top:var(--sp3)}
 </style>
 <script defer src="/assets/privacy-messaging.js"></script></head>
 <body>
@@ -339,15 +387,15 @@ img,svg{display:block;max-width:100%}
 <section class="g-hero">
   <div class="g-wrap">
     <p class="g-kicker">About</p>
-    <h1 class="g-h1">Built to own and develop <strong>infrastructure businesses for the long term.</strong></h1>
-    <p class="g-lead">AGI&amp;M Assets Inc. is a Canadian holding company founded in 2019 and based in Toronto.</p>
+    <h1 class="g-h1">Patient owners of <strong>hard-to-build infrastructure businesses.</strong></h1>
+    <p class="g-lead">AGI&amp;M Assets Inc. is a Canadian holding company founded in 2019 and headquartered in Toronto. We invest where engineering, equipment and grid access decide who succeeds.</p>
   </div>
 </section>
 <section class="g-section">
   <div class="g-wrap g-split">
     <div><p class="g-kicker">Who we are</p><h2 class="g-h2">A holding company with operating depth.</h2></div>
     <div>
-      <p class="g-lead" style="margin-top:0">We own and develop businesses in energy infrastructure and industrial technology across Canada and the United States. Our businesses serve utilities, EPCs, industrial owners, commercial facilities and data center operators.</p>
+      <p class="g-lead" style="margin-top:0">We own and develop businesses in energy infrastructure and industrial technology across Canada and the United States. Our businesses serve utilities, independent power producers, EPCs, industrial owners, commercial facilities and data center operators.</p>
       <dl class="g-kv" style="margin-top:32px">
         <dt>Founded</dt><dd>2019</dd>
         <dt>Headquarters</dt><dd>Toronto, Ontario, Canada</dd>
@@ -358,13 +406,48 @@ img,svg{display:block;max-width:100%}
     </div>
   </div>
 </section>
+<section class="g-section">
+  <div class="g-wrap g-split">
+    <div><p class="g-kicker">Leadership</p><h2 class="g-h2">Andy Gong</h2><p class="g-meta" style="margin-top:8px;font-size:15px">Founder</p></div>
+    <div>
+      <p class="g-lead" style="margin-top:0">Senior engineer and serial entrepreneur with a long career building and advising on energy and information systems.</p>
+      <p class="g-lead">Andy founded AGI&amp;M to own and develop infrastructure businesses with a long-term horizon and a global outlook, bringing engineering discipline and international project experience to Canada and the United States.</p>
+      <ul class="g-check" style="margin-top:28px">
+        <li>Energy systems and grid infrastructure</li>
+        <li>Information systems and industrial software</li>
+        <li>Company building across multiple ventures</li>
+      </ul>
+    </div>
+  </div>
+</section>
 <section class="g-section g-alt">
+  <div class="g-wrap">
+    <div class="g-head"><p class="g-kicker">Our view</p><h2 class="g-h2">What we believe about the next decade of power.</h2></div>
+    <div class="g-thesis">
+      <article><h3>Electrification is a grid problem first.</h3><p>Load growth from industry, transport, buildings and data centers lands on transmission and distribution systems that take years to expand. Value accrues to those who can connect, balance and protect new capacity.</p></article>
+      <article><h3>Storage has become grid infrastructure.</h3><p>Batteries now deliver capacity, frequency response and resilience. The hard part is interconnection, controls and operations, not the cells.</p></article>
+      <article><h3>Compute is now an energy business.</h3><p>AI campuses are limited by available power. On-site generation, storage and power conversion decide how quickly new capacity comes online.</p></article>
+      <article><h3>Equipment is the bottleneck.</h3><p>Large transformers, switchgear and power electronics carry long lead times. Projects are won by planning procurement, testing and certification early, not by the lowest catalog price.</p></article>
+    </div>
+  </div>
+</section>
+<section class="g-section">
   <div class="g-wrap">
     <div class="g-head"><p class="g-kicker">How we operate</p><h2 class="g-h2">Three principles.</h2></div>
     <div class="g-grid g-grid-3">
-      <article class="g-card"><h3 class="g-h3">Long-term ownership</h3><p>We build and hold businesses in long-cycle infrastructure markets.</p></article>
-      <article class="g-card"><h3 class="g-h3">Direct relationships</h3><p>No intermediaries between our businesses and their customers.</p></article>
-      <article class="g-card"><h3 class="g-h3">Accountable delivery</h3><p>Engineering and delivery responsibility sits with each operating business.</p></article>
+      <article class="g-card"><h3 class="g-h3">Long-term ownership</h3><p>We build and hold businesses in long-cycle infrastructure markets rather than trading them.</p></article>
+      <article class="g-card"><h3 class="g-h3">Direct relationships</h3><p>Our businesses work directly with utilities, EPCs, owners and operators, without intermediaries.</p></article>
+      <article class="g-card"><h3 class="g-h3">Accountable delivery</h3><p>Engineering and delivery responsibility sits with each operating business, from design to acceptance.</p></article>
+    </div>
+  </div>
+</section>
+<section class="g-section g-alt">
+  <div class="g-wrap">
+    <div class="g-head"><p class="g-kicker">Footprint</p><h2 class="g-h2">Where we work.</h2></div>
+    <div class="g-foot-print">
+      <div class="g-place"><h3>Toronto, Ontario</h3><p>AGI&amp;M Assets Inc. headquarters. Energize Solutions office.</p></div>
+      <div class="g-place"><h3>Houston, Texas</h3><p>Energize Solutions office for U.S. energy projects.</p></div>
+      <div class="g-place"><h3>Project markets</h3><p>California, Florida and Illinois in the United States; Denmark, Germany, the United Kingdom, the Netherlands and Ukraine in Europe.</p></div>
     </div>
   </div>
 </section>

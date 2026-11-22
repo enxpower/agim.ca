@@ -4,13 +4,13 @@
 <meta charset="utf-8"/>
 <meta name="google-adsense-account" content="ca-pub-3331849532184610"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>AGI&M Assets Inc. — Energy Infrastructure & Industrial Technology Holding Company</title>
+<title>AGI&M Assets Inc. — Energy Infrastructure Holding Company, Toronto</title>
 <meta name="description" content="AGI&M Assets Inc. is a Canadian holding company that owns and develops energy infrastructure and industrial technology businesses across North America."/>
 <link rel="canonical" href="https://agim.ca/"/>
 <link rel="icon" href="/favicon.ico" sizes="any"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://agim.ca/"/>
-<meta property="og:title" content="AGI&M Assets Inc. — Energy Infrastructure & Industrial Technology Holding Company"/>
+<meta property="og:title" content="AGI&M Assets Inc. — Energy Infrastructure Holding Company, Toronto"/>
 <meta property="og:description" content="AGI&M Assets Inc. is a Canadian holding company that owns and develops energy infrastructure and industrial technology businesses across North America."/>
 <meta property="og:image" content="https://agim.ca/og-image.png"/>
 <meta property="og:image:width" content="1200"/>
@@ -313,6 +313,54 @@ img,svg{display:block;max-width:100%}
 .g-foot-bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:var(--sp5);padding-top:var(--sp3);display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--sp2);font-size:13px}
 @media(max-width:900px){.g-foot-grid{grid-template-columns:1fr 1fr}.g-foot-brand-col{grid-column:1/-1}}
 @media(max-width:480px){.g-foot-grid{grid-template-columns:1fr}}
+
+/* Navigation upgrade: larger, higher-contrast links; solid contact button */
+.nav .wrap{height:72px}
+.brand-name{font-size:13px;letter-spacing:.12em}
+.nav-links a{font-size:13px;letter-spacing:.06em;color:#33475B;font-weight:500}
+.nav-links a:hover{color:#0B2545}
+.nav-doc{background:#0B2545;color:#fff;font-size:12px;padding:12px 22px;letter-spacing:.08em}
+.nav-doc:hover{background:#1B4F8A;border-color:#1B4F8A}
+.nav-drawer a{font-size:15px;color:#0B2545}
+/* Figures band */
+.g-figs-band{border-bottom:1px solid var(--rule);background:#fff}
+.g-figs{display:grid;grid-template-columns:repeat(4,1fr)}
+.g-fig:first-child{padding-left:0}
+.g-fig{padding:var(--sp4) var(--sp3);border-right:1px solid var(--rule)}
+.g-fig:last-child{border-right:0}
+.g-fig-n{font-size:clamp(28px,3.4vw,40px);font-weight:250;letter-spacing:-.03em;line-height:1;color:#0B2545}
+.g-fig-l{font-size:13px;color:#5E7A99;margin-top:8px;line-height:1.45}
+@media(max-width:900px){.g-figs{grid-template-columns:1fr 1fr}.g-fig:nth-child(2){border-right:0}.g-fig:nth-child(-n+2){border-bottom:1px solid var(--rule)}}
+/* Thesis */
+.g-thesis{counter-reset:t;display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--rule)}
+.g-thesis article{counter-increment:t;padding:var(--sp4) var(--sp4) var(--sp4) 0;border-bottom:1px solid var(--rule)}
+.g-thesis article:nth-child(odd){padding-right:var(--sp5);border-right:1px solid var(--rule)}
+.g-thesis article:nth-child(even){padding-left:var(--sp5)}
+.g-thesis article::before{content:counter(t,decimal-leading-zero);display:block;font-size:12px;letter-spacing:.14em;color:#1B4F8A;font-weight:700;margin-bottom:var(--sp2)}
+.g-thesis h3{font-size:22px;font-weight:400;letter-spacing:-.01em;color:#0B2545;margin-bottom:var(--sp1)}
+.g-thesis p{color:#5E7A99;line-height:1.7}
+@media(max-width:800px){.g-thesis{grid-template-columns:1fr}.g-thesis article,.g-thesis article:nth-child(odd),.g-thesis article:nth-child(even){padding:var(--sp4) 0;border-right:0}}
+/* Domain expertise */
+.g-domain{display:grid;grid-template-columns:4fr 8fr;gap:var(--sp5);padding-block:var(--sp4);border-top:1px solid var(--rule)}
+.g-domain:first-of-type{border-top:0}
+.g-domain h3{font-size:22px;font-weight:400;color:#0B2545}
+.g-domain .g-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:var(--sp2)}
+.g-tag{font-size:12px;padding:5px 10px;border:1px solid var(--rule);background:#fff;color:#33475B;white-space:nowrap}
+@media(max-width:800px){.g-domain{grid-template-columns:1fr;gap:var(--sp2)}.g-tag{white-space:normal}}
+/* Two markets table */
+.g-table-wrap{overflow-x:auto;border:1px solid var(--rule);background:#fff}
+.g-table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+.g-table th,.g-table td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--rule);vertical-align:top}
+.g-table thead th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5E7A99;background:#F0F4F8}
+.g-table tbody th{font-weight:600;color:#0B2545;width:22%}
+.g-table tr:last-child th,.g-table tr:last-child td{border-bottom:0}
+/* Footprint */
+.g-foot-print{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp3)}
+.g-place{border-left:2px solid #1B4F8A;padding:4px 0 4px var(--sp3)}
+.g-place h3{font-size:16px;font-weight:600;color:#0B2545}
+.g-place p{font-size:14px;color:#5E7A99;margin-top:6px;line-height:1.6}
+@media(max-width:800px){.g-foot-print{grid-template-columns:1fr}}
+.g-note{font-size:13px;color:#5E7A99;margin-top:var(--sp3)}
 </style>
 <script defer src="/assets/privacy-messaging.js"></script></head>
 <body>
@@ -339,20 +387,31 @@ img,svg{display:block;max-width:100%}
 <section class="g-hero">
   <div class="g-wrap">
     <p class="g-kicker">AGI&amp;M Assets Inc. · Toronto, Canada</p>
-    <h1 class="g-h1">A long-term owner and builder of <strong>energy infrastructure businesses.</strong></h1>
-    <p class="g-lead">AGI&amp;M Assets Inc. is a Canadian holding company that owns and develops energy infrastructure and industrial technology businesses across North America.</p>
-    <div class="g-actions"><a class="g-btn g-btn-primary" href="/businesses/">Our businesses</a><a class="g-btn g-btn-secondary" href="/contact/">Contact</a></div>
+    <h1 class="g-h1">Long-term capital and engineering depth <strong>for North America's power infrastructure.</strong></h1>
+    <p class="g-lead">We own and develop businesses that design, integrate and control energy infrastructure, from battery storage and microgrids to grid equipment and power for data centers, across Canada and the United States.</p>
+    <div class="g-actions"><a class="g-btn g-btn-primary" href="/businesses/">Our businesses</a><a class="g-btn g-btn-secondary" href="/about/">How we think</a></div>
   </div>
 </section>
-<div class="g-proof"><div class="g-wrap"><ul>
-  <li>Founded 2019 · Toronto, Canada</li>
-  <li>Operating in Canada and the United States</li>
-  <li>Energy storage, microgrids and data center energy</li>
-  <li>Autonomous industrial systems</li>
-</ul></div></div>
+<div class="g-figs-band"><div class="g-wrap"><div class="g-figs">
+  <div class="g-fig"><div class="g-fig-n">2019</div><div class="g-fig-l">Founded in Toronto</div></div>
+  <div class="g-fig"><div class="g-fig-n">10</div><div class="g-fig-l">Reference projects across our portfolio</div></div>
+  <div class="g-fig"><div class="g-fig-n">7</div><div class="g-fig-l">In commercial operation</div></div>
+  <div class="g-fig"><div class="g-fig-n">111 MW</div><div class="g-fig-l">Grid-scale storage projects in Europe (202 MWh)</div></div>
+</div></div></div>
+<section class="g-section">
+  <div class="g-wrap">
+    <div class="g-head"><p class="g-kicker">Our view</p><h2 class="g-h2">Four convictions behind every investment.</h2></div>
+    <div class="g-thesis">
+      <article><h3>Electrification is a grid problem first.</h3><p>Load growth from industry, transport, buildings and data centers lands on transmission and distribution systems that take years to expand. Value accrues to those who can connect, balance and protect new capacity.</p></article>
+      <article><h3>Storage has become grid infrastructure.</h3><p>Batteries now deliver capacity, frequency response and resilience. The hard part is interconnection, controls and operations, not the cells.</p></article>
+      <article><h3>Compute is now an energy business.</h3><p>AI campuses are limited by available power. On-site generation, storage and power conversion decide how quickly new capacity comes online.</p></article>
+      <article><h3>Equipment is the bottleneck.</h3><p>Large transformers, switchgear and power electronics carry long lead times. Projects are won by planning procurement, testing and certification early, not by the lowest catalog price.</p></article>
+    </div>
+  </div>
+</section>
 <section class="g-section g-alt">
   <div class="g-wrap">
-    <div class="g-head"><p class="g-kicker">Businesses</p><h2 class="g-h2">Two businesses. One long-term owner.</h2></div>
+    <div class="g-head"><p class="g-kicker">Businesses</p><h2 class="g-h2">Operating businesses with their own teams and customers.</h2></div>
     <div class="g-grid g-grid-2">
       <article class="g-card g-card-accent">
         <span class="g-badge">Operating business</span>
@@ -365,7 +424,7 @@ img,svg{display:block;max-width:100%}
         <span class="g-badge g-badge-dev">Development stage</span>
         <h3 class="g-h3">ARCBOS</h3>
         <p class="g-meta">Autonomous industrial systems</p>
-        <p>Building SnowBot, an autonomous snow removal system for commercial facilities in North America, offered as robotics-as-a-service.</p>
+        <p>Building SnowBot, an autonomous snow removal system for commercial facilities across Canada and the northern United States, offered as robotics-as-a-service.</p>
         <a class="g-link" href="https://arcbos.com" rel="noopener" target="_blank">arcbos.com</a>
       </article>
     </div>
@@ -373,23 +432,38 @@ img,svg{display:block;max-width:100%}
 </section>
 <section class="g-section">
   <div class="g-wrap">
-    <div class="g-head"><p class="g-kicker">How we operate</p><h2 class="g-h2">Patient capital. Engineering discipline.</h2></div>
-    <div class="g-grid g-grid-3">
-      <article class="g-card"><h3 class="g-h3">Long-term ownership</h3><p>We build and hold businesses in long-cycle infrastructure markets rather than trading them.</p></article>
-      <article class="g-card"><h3 class="g-h3">Direct relationships</h3><p>Our businesses work directly with utilities, EPCs, industrial owners and data center operators.</p></article>
-      <article class="g-card"><h3 class="g-h3">Accountable delivery</h3><p>Each business carries engineering and delivery responsibility for its own projects and products.</p></article>
-    </div>
+    <div class="g-head"><p class="g-kicker">Where we know the ground</p><h2 class="g-h2">Four areas of working knowledge.</h2></div>
+    <div class="g-domain"><div><h3>Grid &amp; interconnection</h3></div><div><p class="g-lead" style="margin-top:0;font-size:16px">How power systems are planned, studied, connected and protected in each market.</p><div class="g-tags"><span class="g-tag">ISO / RTO market rules</span><span class="g-tag">Interconnection studies and queues</span><span class="g-tag">IEEE 1547-2018</span><span class="g-tag">Protection interfaces</span><span class="g-tag">Grid-code compliance</span><span class="g-tag">Frequency services</span></div></div></div>
+    <div class="g-domain"><div><h3>Electrical equipment &amp; supply chain</h3></div><div><p class="g-lead" style="margin-top:0;font-size:16px">What equipment a project needs, where it comes from, how long it takes and how it is proven.</p><div class="g-tags"><span class="g-tag">Power and distribution transformers</span><span class="g-tag">MV switchgear</span><span class="g-tag">PCS and inverters</span><span class="g-tag">Protection relays</span><span class="g-tag">Lead-time planning</span><span class="g-tag">Factory acceptance testing</span><span class="g-tag">UL / CSA certification</span></div></div></div>
+    <div class="g-domain"><div><h3>Energy storage &amp; controls</h3></div><div><p class="g-lead" style="margin-top:0;font-size:16px">Storage systems that pass interconnection, dispatch to value and keep running.</p><div class="g-tags"><span class="g-tag">BESS integration</span><span class="g-tag">EnergizeOS EMS</span><span class="g-tag">Microgrid control</span><span class="g-tag">Commissioning</span><span class="g-tag">Metered acceptance</span><span class="g-tag">Operations support</span></div></div></div>
+    <div class="g-domain"><div><h3>Power for compute</h3></div><div><p class="g-lead" style="margin-top:0;font-size:16px">Power strategy for data centers where capacity, density and timing decide the business case.</p><div class="g-tags"><span class="g-tag">Large-load interconnection</span><span class="g-tag">Bridge and on-site power</span><span class="g-tag">Three-tier storage</span><span class="g-tag">Solid-state transformers</span><span class="g-tag">800 V DC distribution</span></div></div></div>
   </div>
 </section>
 <section class="g-section g-alt">
   <div class="g-wrap">
-    <div class="g-head"><p class="g-kicker">Insights</p><h2 class="g-h2">Engineering references for energy storage buyers.</h2></div>
-    <div class="g-grid g-grid-3">
-      <article class="g-card"><h3 class="g-h3">Specify the storage system</h3><p>A 10 MW / four-hour example with end-of-warranty assumptions and an evidence matrix.</p><a class="g-link" href="/insights/guides/bess-procurement/">Procurement guide</a></article>
-      <article class="g-card"><h3 class="g-h3">Compare bids on the same boundary</h3><p>Three example bids show how missing scope changes the apparent lowest price.</p><a class="g-link" href="/insights/guides/bess-bid-comparison/">Bid comparison</a></article>
-      <article class="g-card"><h3 class="g-h3">North American Energy Intelligence</h3><p>Source-linked editions on storage policy, utility finance and grid investment.</p><a class="g-link" href="/insights/intelligence/">Energy Intelligence</a></article>
+    <div class="g-head"><p class="g-kicker">Canada and the United States</p><h2 class="g-h2">Two markets. Two rulebooks. One team that works in both.</h2></div>
+    <div class="g-table-wrap"><table class="g-table">
+      <thead><tr><th scope="col"></th><th scope="col">Canada</th><th scope="col">United States</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">System operators</th><td>IESO (Ontario), AESO (Alberta) and provincial utilities</td><td>ERCOT, CAISO, PJM, MISO, NYISO, ISO-NE and SPP</td></tr>
+        <tr><th scope="row">Interconnection</th><td>Provincial utility and system-operator processes</td><td>FERC-jurisdictional queues (Order No. 2023) and utility processes</td></tr>
+        <tr><th scope="row">Electrical code</th><td>Canadian Electrical Code (CSA C22.1)</td><td>National Electrical Code (NFPA 70)</td></tr>
+        <tr><th scope="row">Certification</th><td>CSA and cUL listings</td><td>UL listings, e.g. UL 9540, UL 1741</td></tr>
+        <tr><th scope="row">Federal incentives</th><td>Clean Technology Investment Tax Credit</td><td>Clean electricity investment tax credit (Section 48E)</td></tr>
+      </tbody>
+    </table></div>
+    <p class="g-note">Every project is built to the codes, certifications and interconnection rules of its own jurisdiction.</p>
+  </div>
+</section>
+<section class="g-section">
+  <div class="g-wrap">
+    <div class="g-head"><p class="g-kicker">Footprint</p><h2 class="g-h2">Offices in Toronto and Houston. Projects on two continents.</h2></div>
+    <div class="g-foot-print">
+      <div class="g-place"><h3>Toronto, Ontario</h3><p>AGI&amp;M Assets Inc. headquarters. Energize Solutions office.</p></div>
+      <div class="g-place"><h3>Houston, Texas</h3><p>Energize Solutions office for U.S. energy projects.</p></div>
+      <div class="g-place"><h3>Project markets</h3><p>California, Florida and Illinois in the United States; Denmark, Germany, the United Kingdom, the Netherlands and Ukraine in Europe.</p></div>
     </div>
-    <p style="margin-top:32px"><a class="g-link" href="/insights/">All insights</a></p>
+    <p class="g-note">Project counts and capacities refer to projects delivered or supported by Energize Solutions Inc.</p>
   </div>
 </section>
 <section class="g-cta">

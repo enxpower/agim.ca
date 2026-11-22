@@ -4,13 +4,13 @@
 <meta charset="utf-8"/>
 <meta name="google-adsense-account" content="ca-pub-3331849532184610"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Energy & Infrastructure Insights — AGI&M ASSETS INC.</title>
+<title>Energy & Infrastructure Insights — AGI&M Assets Inc.</title>
 <meta name="description" content="Evidence-first engineering knowledge and original BESS sizing methodology for North American energy infrastructure."/>
 <link rel="canonical" href="https://agim.ca/insights/"/>
 <link rel="icon" href="/favicon.ico" sizes="any"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://agim.ca/insights/"/>
-<meta property="og:title" content="Energy & Infrastructure Insights — AGI&M ASSETS INC."/>
+<meta property="og:title" content="Energy & Infrastructure Insights — AGI&M Assets Inc."/>
 <meta property="og:description" content="Evidence-first engineering knowledge and original BESS sizing methodology for North American energy infrastructure."/>
 <meta property="og:image" content="https://agim.ca/og-image.png"/>
 <meta property="og:image:width" content="1200"/>
@@ -313,6 +313,54 @@ img,svg{display:block;max-width:100%}
 .g-foot-bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:var(--sp5);padding-top:var(--sp3);display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--sp2);font-size:13px}
 @media(max-width:900px){.g-foot-grid{grid-template-columns:1fr 1fr}.g-foot-brand-col{grid-column:1/-1}}
 @media(max-width:480px){.g-foot-grid{grid-template-columns:1fr}}
+
+/* Navigation upgrade: larger, higher-contrast links; solid contact button */
+.nav .wrap{height:72px}
+.brand-name{font-size:13px;letter-spacing:.12em}
+.nav-links a{font-size:13px;letter-spacing:.06em;color:#33475B;font-weight:500}
+.nav-links a:hover{color:#0B2545}
+.nav-doc{background:#0B2545;color:#fff;font-size:12px;padding:12px 22px;letter-spacing:.08em}
+.nav-doc:hover{background:#1B4F8A;border-color:#1B4F8A}
+.nav-drawer a{font-size:15px;color:#0B2545}
+/* Figures band */
+.g-figs-band{border-bottom:1px solid var(--rule);background:#fff}
+.g-figs{display:grid;grid-template-columns:repeat(4,1fr)}
+.g-fig:first-child{padding-left:0}
+.g-fig{padding:var(--sp4) var(--sp3);border-right:1px solid var(--rule)}
+.g-fig:last-child{border-right:0}
+.g-fig-n{font-size:clamp(28px,3.4vw,40px);font-weight:250;letter-spacing:-.03em;line-height:1;color:#0B2545}
+.g-fig-l{font-size:13px;color:#5E7A99;margin-top:8px;line-height:1.45}
+@media(max-width:900px){.g-figs{grid-template-columns:1fr 1fr}.g-fig:nth-child(2){border-right:0}.g-fig:nth-child(-n+2){border-bottom:1px solid var(--rule)}}
+/* Thesis */
+.g-thesis{counter-reset:t;display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--rule)}
+.g-thesis article{counter-increment:t;padding:var(--sp4) var(--sp4) var(--sp4) 0;border-bottom:1px solid var(--rule)}
+.g-thesis article:nth-child(odd){padding-right:var(--sp5);border-right:1px solid var(--rule)}
+.g-thesis article:nth-child(even){padding-left:var(--sp5)}
+.g-thesis article::before{content:counter(t,decimal-leading-zero);display:block;font-size:12px;letter-spacing:.14em;color:#1B4F8A;font-weight:700;margin-bottom:var(--sp2)}
+.g-thesis h3{font-size:22px;font-weight:400;letter-spacing:-.01em;color:#0B2545;margin-bottom:var(--sp1)}
+.g-thesis p{color:#5E7A99;line-height:1.7}
+@media(max-width:800px){.g-thesis{grid-template-columns:1fr}.g-thesis article,.g-thesis article:nth-child(odd),.g-thesis article:nth-child(even){padding:var(--sp4) 0;border-right:0}}
+/* Domain expertise */
+.g-domain{display:grid;grid-template-columns:4fr 8fr;gap:var(--sp5);padding-block:var(--sp4);border-top:1px solid var(--rule)}
+.g-domain:first-of-type{border-top:0}
+.g-domain h3{font-size:22px;font-weight:400;color:#0B2545}
+.g-domain .g-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:var(--sp2)}
+.g-tag{font-size:12px;padding:5px 10px;border:1px solid var(--rule);background:#fff;color:#33475B;white-space:nowrap}
+@media(max-width:800px){.g-domain{grid-template-columns:1fr;gap:var(--sp2)}.g-tag{white-space:normal}}
+/* Two markets table */
+.g-table-wrap{overflow-x:auto;border:1px solid var(--rule);background:#fff}
+.g-table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+.g-table th,.g-table td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--rule);vertical-align:top}
+.g-table thead th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5E7A99;background:#F0F4F8}
+.g-table tbody th{font-weight:600;color:#0B2545;width:22%}
+.g-table tr:last-child th,.g-table tr:last-child td{border-bottom:0}
+/* Footprint */
+.g-foot-print{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp3)}
+.g-place{border-left:2px solid #1B4F8A;padding:4px 0 4px var(--sp3)}
+.g-place h3{font-size:16px;font-weight:600;color:#0B2545}
+.g-place p{font-size:14px;color:#5E7A99;margin-top:6px;line-height:1.6}
+@media(max-width:800px){.g-foot-print{grid-template-columns:1fr}}
+.g-note{font-size:13px;color:#5E7A99;margin-top:var(--sp3)}
 </style>
 <style>
 main > .sec{padding-block:var(--sp7)}
@@ -352,47 +400,38 @@ main > .sec{padding-block:var(--sp7)}
   <a href="/contact/">Contact</a>
 </div>
 <main>
-<section class="hero">
-  <div class="wrap">
-    <p class="kicker">AGI&amp;M / Engineering Knowledge</p>
-    <h1>Infrastructure decisions, <strong>explained precisely.</strong></h1>
-    <p class="insight-intro">Original engineering primers and transparent calculations for North American energy storage, grid interconnection, and industrial power projects. Our focus is practical interpretation—not reproduced headlines or unsupported predictions.</p>
-    <div class="hero-actions"><a href="#storage-reference" class="btn-solid">Explore Engineering Reference</a><a href="/capabilities/" class="btn-ghost">Company Capabilities</a></div>
+<section class="g-hero">
+  <div class="g-wrap">
+    <p class="g-kicker">Insights</p>
+    <h1 class="g-h1">Engineering references <strong>for energy infrastructure buyers.</strong></h1>
+    <p class="g-lead">Worked procurement guides, calculators and dated North American energy research, written by people who specify, buy and commission the equipment.</p>
+    <div class="g-actions"><a class="g-btn g-btn-primary" href="/insights/guides/bess-procurement/">Start with the procurement guide</a><a class="g-btn g-btn-secondary" href="/insights/intelligence/">Energy Intelligence</a></div>
   </div>
 </section>
 <!-- EDITIONS START --><section class="edition-hub" aria-label="Energy Intelligence"><div class="edition-wrap"><div class="edition-top"><p class="edition-kicker">AGI&amp;M / North America</p><span>Source-dated intelligence · Source-led analysis</span></div><div class="edition-heading"><h2>Latest Intelligence</h2><a href="/insights/intelligence/archive/">Browse All Editions <span aria-hidden="true">↗</span></a></div><div class="edition-grid"><article class="edition-current"><p class="edition-kicker">Latest Published Edition</p><span class="edition-meta">2026 · Week 44 <span aria-hidden="true">/</span> <time datetime="2026-10-28T22:06:40Z">October 28, 2026</time></span><h3><a href="/insights/intelligence/2026-w44/">Battery industrial policy meets utility finance and measured fleet use</a></h3><p>A new U.S. battery strategy, a closed utility loan and preliminary operating data require three different procurement responses.</p><div class="edition-tags"><span>Strategy announced</span><span>Financial close announced</span><span>Preliminary operating data</span></div><a class="edition-button" href="/insights/intelligence/2026-w44/">Read the full edition <span aria-hidden="true">→</span></a></article><div class="edition-side"><article class="edition-previous"><p class="edition-kicker">Previous Edition</p><span class="edition-meta">2026 · Week 43 <span aria-hidden="true">/</span> <time datetime="2026-10-25T14:45:00Z">October 25, 2026</time></span><h3><a href="/insights/intelligence/2026-w43/">Grid funding advances; storage procurement still turns on delivery evidence</a></h3><p>A U.S. grid-resilience funding announcement, a Canadian draft procurement and changing storage-duration requirements point to different commercial gates.</p><a href="/insights/intelligence/2026-w43/">Read previous edition →</a></article><aside class="edition-watch"><p class="edition-kicker">Watchlist from this edition</p><ul><li>Track utility-level disclosures that identify the storage scope within the Alliant portfolio.</li><li>Check for concrete manufacturing qualification evidence after the battery-strategy launch.</li><li>Review later EIA releases for revisions, maintaining the same statistical definitions.</li></ul><p class="edition-note">These questions belong to the dated edition above. They are not a live update or a forecast.</p></aside></div></div><p class="edition-policy">Independent English research. Publication dates and source dates are separate. Analysis is informational and does not establish project approval, supplier performance or a binding offer.</p></div></section><!-- EDITIONS END -->
-<section class="sec" aria-labelledby="topics-title">
-  <div class="wrap">
-    <p class="kicker">Knowledge Areas</p>
-    <h2 id="topics-title" class="page-h1">What engineers need to know.</h2>
-    <div class="insight-cta"><a class="btn-solid" href="/insights/intelligence/">Open Energy Intelligence</a><span>Official price indicators, carefully dated evidence and research methodology.</span></div>
-    <div class="insight-cta"><a class="btn-solid" href="/insights/guides/bess-procurement/">BESS Equipment Procurement Guide</a><span>Compare AC output, certification evidence, interface scope, acceptance testing and warranties.</span></div>
-    <div class="insight-grid">
-      <article class="insight-panel"><span class="insight-label">01 / BESS</span><h3>Power, energy and duration</h3><p>Understand why MW and MWh describe different constraints, why depth of discharge affects usable energy, and which assumptions belong in an early-stage project estimate.</p><p><a href="/insights/tools/bess/">Calculate capacity and runtime →</a></p></article>
-      <article class="insight-panel"><span class="insight-label">02 / Grid</span><h3>Integration and interconnection</h3><p>Distinguish equipment ratings from site deliverability, utility approval, protection coordination, voltage requirements, and the commissioning evidence needed before operational claims.</p><p><a href="/insights/guides/bess-performance/">Work through metered acceptance →</a></p></article>
-      <article class="insight-panel"><span class="insight-label">03 / Procurement</span><h3>Equipment selection discipline</h3><p>Compare interface requirements, verified product certifications, thermal limits, maintenance obligations and site-specific engineering constraints before requesting a commercial quotation.</p><p><a href="/insights/guides/bess-bid-comparison/">Compare bids and download the worksheet →</a></p></article>
+<section class="g-section" aria-labelledby="topics-title">
+  <div class="g-wrap">
+    <div class="g-head"><p class="g-kicker">Guides and tools</p><h2 id="topics-title" class="g-h2">Make an equipment decision you can defend.</h2></div>
+    <div class="g-grid g-grid-3">
+      <article class="g-card g-card-accent"><span class="g-badge">Guide</span><h3 class="g-h3">Specify the storage system</h3><p>A 10 MW / four-hour example with end-of-warranty assumptions and an evidence matrix for certification, testing and warranties.</p><a class="btn-solid" href="/insights/guides/bess-procurement/">BESS procurement guide</a></article>
+      <article class="g-card g-card-accent"><span class="g-badge">Guide</span><h3 class="g-h3">Compare bids on the same boundary</h3><p>Three example bids show how missing scope and AC guarantees change the apparent lowest price, with a downloadable worksheet.</p><a class="g-link" href="/insights/guides/bess-bid-comparison/">Bid comparison</a></article>
+      <article class="g-card g-card-accent"><span class="g-badge">Guide</span><h3 class="g-h3">Check what the meter proves</h3><p>Reconcile delivered energy and see why an energy pass can coexist with a power shortfall.</p><a class="g-link" href="/insights/guides/bess-performance/">Metered acceptance</a></article>
     </div>
-    <div class="insight-cta"><a class="btn-solid" href="/insights/tools/bess/">Use the BESS Engineering Calculators</a><span>Two transparent, independent calculation methods with explicit assumptions.</span></div>
+    <div class="g-grid g-grid-2" style="margin-top:24px">
+      <article class="g-card"><span class="g-badge">Tool</span><h3 class="g-h3">BESS calculators</h3><p>Size DC nameplate energy and estimate runtime with explicit assumptions.</p><a class="g-link" href="/insights/tools/bess/">Open calculators</a></article>
+      <article class="g-card"><span class="g-badge">Research</span><h3 class="g-h3">North American Energy Intelligence</h3><p>Dated editions on storage policy, utility finance, grid investment and official price indicators.</p><a class="g-link" href="/insights/intelligence/">Open Energy Intelligence</a></article>
+    </div>
   </div>
 </section>
-<section id="storage-reference" class="sec" style="background:#fff" aria-labelledby="storage-title">
-  <div class="wrap">
-    <p class="kicker">Original Engineering Reference / 01</p>
-    <h2 class="page-h1" id="storage-title">A practical first-pass BESS sizing calculation.</h2>
-    <p class="insight-intro">A storage system rated at 1 MW can deliver 2 MWh over two hours only if sufficient usable energy is available at the required power. Nameplate DC energy is not the same as AC energy delivered to a load.</p>
-    <div class="insight-formula">DC nameplate energy ≈ AC delivery target ÷ (usable DoD × discharge efficiency)</div>
-    <div class="insight-steps">
-      <div><h3>Worked example</h3><p>For a target of 2.0 MWh AC, assumed usable depth of discharge of 90%, and assumed one-way discharge efficiency of 90%: 2.0 ÷ (0.90 × 0.90) ≈ <strong>2.47 MWh DC nameplate</strong>. This is an illustrative estimate, not an equipment specification or guaranteed performance.</p></div>
-      <div><h3>What this estimate omits</h3><p>Site auxiliary loads, battery degradation, temperature derating, inverter clipping, reserve requirements, warranty constraints, grid export limits, and the manufacturer's continuous-power envelope may require additional capacity. Qualified design and vendor documentation control final sizing.</p></div>
-    </div>
-    <div class="insight-cta"><a href="/insights/guides/bess-procurement/#worked-example" class="btn-solid">Apply the full procurement example</a><p>Methodology: explicit assumptions; nominal DC sizing only; no model-generated equipment claims.</p></div>
+<section id="storage-reference" class="g-section g-alt" aria-labelledby="storage-title">
+  <div class="g-wrap">
+    <div class="g-head"><p class="g-kicker">Worked example</p><h2 class="g-h2" id="storage-title">A practical first-pass BESS sizing calculation.</h2></div>
+    <p class="g-lead" style="margin-top:0">A 1 MW system delivers 2 MWh over two hours only if enough usable energy is available at that power. Nameplate DC energy is not AC energy delivered to the load.</p>
+    <div class="insight-formula" style="margin-top:24px">DC nameplate energy ≈ AC delivery target ÷ (usable DoD × discharge efficiency)</div>
+    <p class="g-lead">For 2.0 MWh AC at 90% usable depth of discharge and 90% one-way efficiency: 2.0 ÷ (0.90 × 0.90) ≈ <strong>2.47 MWh DC nameplate</strong>, before auxiliary loads, degradation and temperature derating.</p>
+    <div class="g-actions"><a class="g-btn g-btn-primary" href="/insights/guides/bess-procurement/#worked-example">Full procurement example</a><a class="g-btn g-btn-secondary" href="/insights/methodology/">Research method</a></div>
   </div>
-</section>
-<section class="sec" aria-labelledby="editorial-title"><div class="wrap">
-  <p class="kicker">Research Standard</p><h2 id="editorial-title" class="page-h1">Evidence before conclusions.</h2>
-  <p class="insight-intro">Our published engineering material distinguishes public-source facts, calculated estimates, operating assumptions, and unresolved questions. We do not treat project announcements as proof of commissioning, or vendor claims as independently measured performance. Material updates must retain source dates and calculation assumptions.</p>
-  <div class="insight-cta"><a href="/insights/methodology/" class="btn-ghost">Research Method and Responsibility</a><span>AGI&amp;M Assets Inc. · Engineering Knowledge</span></div>
-</div></section></main>
+</section></main>
 
 <footer class="g-foot">
   <div class="g-wrap">
