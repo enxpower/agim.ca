@@ -1,30 +1,30 @@
 {
   "schema_version": 1,
-  "source_issue": "2026-w45",
-  "source_payload_sha256": "39c0eaf9a86314ad770ff704772d7021d78f92c9357c8561a7d831bffadbbcf8",
-  "snapshot_observed_on": "2026-11-02",
+  "source_issue": "2026-w47",
+  "source_payload_sha256": "d7fed4664b3ab5613c4a5aa65b69c6a9da0a83e719b4ab2766d05875057f73d1",
+  "snapshot_observed_on": "2026-11-16",
   "metrics": [
     {
       "id": "bls_storage_battery_ppi",
-      "value": 263.788,
-      "year_over_year_pct": 1.52,
-      "as_of": "2026-09-01",
+      "value": 264.262,
+      "year_over_year_pct": 1.72,
+      "as_of": "2026-10-01",
       "status": "preliminary",
       "source_url": "https://data.bls.gov/timeseries/WPU117901"
     },
     {
       "id": "bls_transformer_ppi",
-      "value": 475.065,
-      "year_over_year_pct": 7.83,
-      "as_of": "2026-09-01",
+      "value": 483.91,
+      "year_over_year_pct": 5.58,
+      "as_of": "2026-10-01",
       "status": "preliminary",
       "source_url": "https://data.bls.gov/timeseries/PCU335311335311"
     },
     {
       "id": "bls_switchgear_ppi",
-      "value": 412.235,
-      "year_over_year_pct": 12.32,
-      "as_of": "2026-09-01",
+      "value": 413.606,
+      "year_over_year_pct": 13.47,
+      "as_of": "2026-10-01",
       "status": "preliminary",
       "source_url": "https://data.bls.gov/timeseries/PCU335313335313"
     }
