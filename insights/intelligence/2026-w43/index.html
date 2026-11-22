@@ -16,7 +16,7 @@
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AGI&M Assets Inc.","url":"https://agim.ca","logo":"https://agim.ca/og-image.png","description":"A Canadian holding company that owns and develops energy infrastructure, power equipment, and autonomous industrial systems businesses across North America.","areaServed":["CA","US"],"contactPoint":{"@type":"ContactPoint","email":"info@agim.ca","contactType":"business"},"sameAs":["https://www.linkedin.com/in/gongtiejing"],"subOrganization":[{"@type":"Organization","name":"Energize Solutions Inc.","url":"https://energizeos.com"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AGI&M Assets Inc.","url":"https://agim.ca","logo":"https://agim.ca/og-image.png","description":"A Canadian holding company that owns and develops energy infrastructure and industrial technology businesses across North America.","foundingDate":"2019","areaServed":["CA","US"],"address":{"@type":"PostalAddress","addressLocality":"Toronto","addressRegion":"ON","addressCountry":"CA"},"contactPoint":{"@type":"ContactPoint","email":"info@agim.ca","contactType":"business"},"subOrganization":[{"@type":"Organization","name":"Energize Solutions Inc.","url":"https://energizeos.com"},{"@type":"Organization","name":"ARCBOS","url":"https://arcbos.com"}]}</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-y:scroll}
@@ -245,6 +245,74 @@ img,svg{display:block;max-width:100%}
   .foot .wrap{flex-direction:column;align-items:flex-start;gap:var(--sp2);padding-block:var(--sp4)}
   .foot-links{gap:var(--sp3)}
 }
+
+/* ---- Group design components (holding-portal redesign) ---- */
+.g-wrap{width:100%;max-width:1160px;margin-inline:auto;padding-inline:var(--gutter)}
+.g-hero{background:#0B2545;color:#fff;position:relative;overflow:hidden;padding-block:var(--sp8) var(--sp7)}
+.g-hero::after{content:"";position:absolute;inset:0;background:radial-gradient(900px 420px at 85% 0%,rgba(74,127,181,.35),transparent 60%);pointer-events:none}
+.g-hero .g-wrap{position:relative;z-index:1}
+.g-kicker{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#1B4F8A;margin-bottom:var(--sp3);display:flex;align-items:center;gap:12px}
+.g-kicker::before{content:"";width:28px;height:1px;background:currentColor}
+.g-hero .g-kicker{color:#9CC3EA}
+.g-h1{font-size:clamp(34px,5vw,56px);font-weight:300;letter-spacing:-.03em;line-height:1.08;max-width:900px}
+.g-h1 strong{font-weight:650}
+.g-lead{font-size:clamp(16px,1.6vw,19px);line-height:1.7;color:#5E7A99;max-width:680px;margin-top:var(--sp4)}
+.g-hero .g-lead{color:rgba(255,255,255,.78)}
+.g-actions{display:flex;flex-wrap:wrap;gap:var(--sp2);margin-top:var(--sp5)}
+.g-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:14px 28px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;border:1px solid #0B2545}
+.g-btn-primary{background:#0B2545;color:#fff}
+.g-btn-primary:hover{background:#1B4F8A;border-color:#1B4F8A}
+.g-btn-secondary{background:transparent;color:#0B2545}
+.g-btn-secondary:hover{background:#0B2545;color:#fff}
+.g-hero .g-btn-primary{background:#fff;color:#0B2545;border-color:#fff}
+.g-hero .g-btn-primary:hover{background:#9CC3EA;border-color:#9CC3EA}
+.g-hero .g-btn-secondary{color:#fff;border-color:rgba(255,255,255,.5)}
+.g-hero .g-btn-secondary:hover{background:#fff;color:#0B2545}
+@media(max-width:480px){.g-actions .g-btn{width:100%}.g-hero{padding-block:var(--sp6) var(--sp5)}}
+.g-proof{border-bottom:1px solid var(--rule);background:#fff}
+.g-proof ul{list-style:none;display:flex;flex-wrap:wrap;gap:var(--sp2) var(--sp4);padding-block:var(--sp3);font-size:13px;color:#5E7A99}
+.g-proof li{display:flex;gap:10px;align-items:baseline}
+.g-proof li::before{content:"";width:6px;height:6px;background:#4A7FB5;flex-shrink:0;transform:translateY(-2px)}
+.g-section{padding-block:var(--sp7);border-bottom:1px solid var(--rule)}
+.g-alt{background:#F0F4F8}
+.g-head{max-width:720px;margin-bottom:var(--sp5)}
+.g-h2{font-size:clamp(26px,3.2vw,36px);font-weight:300;letter-spacing:-.02em;line-height:1.2}
+.g-h3{font-size:18px;font-weight:600;line-height:1.35;color:#0B2545}
+.g-grid{display:grid;gap:var(--sp3)}
+.g-grid-2{grid-template-columns:repeat(2,1fr)}
+.g-grid-3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.g-grid-3{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.g-grid-2,.g-grid-3{grid-template-columns:1fr}}
+.g-card{background:#fff;border:1px solid var(--rule);padding:var(--sp4);display:flex;flex-direction:column;gap:var(--sp2)}
+.g-card p{color:#5E7A99;font-size:15px;line-height:1.65}
+.g-card-accent{border-top:3px solid #1B4F8A}
+.g-badge{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;padding:4px 10px;background:#E3ECF5;color:#1B4F8A;align-self:flex-start}
+.g-badge-dev{background:#EEF2F6;color:#3D5368}
+.g-meta{font-size:13px;color:#5E7A99}
+.g-link{font-size:14px;font-weight:600;color:#0B2545;border-bottom:1px solid #4A7FB5;padding-bottom:2px;align-self:flex-start;margin-top:auto}
+.g-link::after{content:" \2192"}
+.g-check{list-style:none;display:grid;gap:10px}
+.g-check li{position:relative;padding-left:24px;color:#33475B;font-size:15px}
+.g-check li::before{content:"";position:absolute;left:0;top:.6em;width:12px;height:2px;background:#4A7FB5}
+.g-split{display:grid;grid-template-columns:5fr 7fr;gap:var(--sp6);align-items:start}
+@media(max-width:900px){.g-split{grid-template-columns:1fr;gap:var(--sp4)}}
+.g-kv{display:grid;grid-template-columns:max-content 1fr;gap:10px 24px;font-size:15px}
+.g-kv dt{color:#5E7A99}
+.g-kv a{color:#1B4F8A}
+.g-cta{background:#0B2545;color:#fff;padding-block:var(--sp7)}
+.g-cta .g-lead{color:rgba(255,255,255,.76)}
+.g-cta .g-btn-primary{background:#fff;color:#0B2545;border-color:#fff}
+.g-cta .g-btn-secondary{color:#fff;border-color:rgba(255,255,255,.5)}
+.g-foot{background:#0B2545;color:rgba(255,255,255,.78);padding-block:var(--sp6) var(--sp4);font-size:14px}
+.g-foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:var(--sp4)}
+.g-foot-grid h2{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff;font-weight:600;margin-bottom:var(--sp2)}
+.g-foot-grid ul{list-style:none;display:grid;gap:10px}
+.g-foot-grid a:hover{color:#fff;text-decoration:underline}
+.g-foot-brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;letter-spacing:.06em}
+.g-foot-about{margin-top:var(--sp2);max-width:320px;line-height:1.6}
+.g-foot-bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:var(--sp5);padding-top:var(--sp3);display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--sp2);font-size:13px}
+@media(max-width:900px){.g-foot-grid{grid-template-columns:1fr 1fr}.g-foot-brand-col{grid-column:1/-1}}
+@media(max-width:480px){.g-foot-grid{grid-template-columns:1fr}}
 </style>
 <style>
 .intel-intro{max-width:800px;font-size:17px;line-height:1.85;color:var(--muted)}
@@ -274,39 +342,59 @@ img,svg{display:block;max-width:100%}
   <div class="wrap">
     <a href="/" class="brand" aria-label="AGI&M Assets home"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="1" y="1" width="11" height="11" fill="#0B2545"/><rect x="14" y="1" width="11" height="11" fill="#4A7FB5"/><rect x="1" y="14" width="11" height="11" fill="#4A7FB5"/><rect x="14" y="14" width="11" height="11" fill="#0B2545"/></svg><span class="brand-name">AGI&amp;M Assets</span></a>
     <ul class="nav-links" role="list">
-      <li><a href="/capabilities/">Capabilities</a></li>
-      <li><a href="/programs/">Programs</a></li>
-      <li><a href="/markets/">Markets</a></li>
+      <li><a href="/businesses/">Businesses</a></li>
       <li><a href="/insights/">Insights</a></li>
       <li><a href="/about/">About</a></li>
-      <li><a href="/contact/">Contact</a></li>
     </ul>
-    <a href="https://docs.agim.ca" target="_blank" rel="noopener" class="nav-doc">Documents</a>
+    <a href="/contact/" class="nav-doc">Contact</a>
     <button class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="nav-drawer" id="drawer" aria-label="Mobile">
-  <a href="/capabilities/">Capabilities</a>
-  <a href="/programs/">Programs</a>
-  <a href="/markets/">Markets</a>
+  <a href="/businesses/">Businesses</a>
   <a href="/insights/">Insights</a>
   <a href="/about/">About</a>
   <a href="/contact/">Contact</a>
-  <a href="https://docs.agim.ca" target="_blank" rel="noopener">Documents</a>
 </div>
 <main><article class="edition-article"><header class="edition-article-head"><div class="edition-wrap"><a class="edition-back" href="/insights/intelligence/">← Energy Intelligence</a><span class="edition-meta">2026 · Week 43 <span aria-hidden="true">/</span> <time datetime="2026-10-25T14:45:00Z">October 25, 2026</time></span><h1>Grid funding advances; storage procurement still turns on delivery evidence</h1><p class="edition-deck">A U.S. grid-resilience funding announcement, a Canadian draft procurement and changing storage-duration requirements point to different commercial gates.</p><p class="edition-byline">AGI&amp;M · Research &amp; Engineering</p></div></header><div class="edition-body"><nav class="edition-toc" aria-label="In this edition"><a href="#briefing">Executive briefing</a><a href="#developments">Key developments</a><a href="#implications">Implications</a><a href="#watchlist">Watchlist</a><a href="#sources">Sources</a></nav><section id="briefing"><p class="edition-kicker">The Briefing</p><h2>Executive briefing</h2><p>North American infrastructure demand is producing several kinds of opportunity at once. This edition separates a funding announcement from a supplier competition and an operating-system trend. The distinction matters: each requires a different next document before a buyer or supplier can commit capital. The three source dates below are explicit; this is a dated assessment, not a claim that every development occurred this week.</p></section><section id="developments"><h2>Key developments</h2><section class="edition-development"><p class="edition-kicker">01 / Announced</p><h3>Federal resilience funding is a route to projects, not a BESS purchase order</h3><p>On October 20, DOE announced approximately $967 million in additional funding through the Grid Resilience State and Tribal Formula Grant program. The announcement directs readers to allocations and application instructions; it does not identify a new battery equipment order. <a class="edition-ref" href="#source-doe-grid">[1]</a></p><h4>Why it matters</h4><p>The relevant commercial signal is an expanding infrastructure funding route. Equipment demand must still be traced to a recipient, eligible project scope and actual purchasing process.</p><h4>Engineering &amp; commercial implications</h4><p>AGI&amp;M analysis: qualify the recipient and project owner before preparing an equipment offer. Ask for the approved scope, funding conditions, procurement route and delivery milestones. Treat resilience objectives as performance requirements to be defined, rather than assuming that every grant will buy storage.</p><div class="edition-uncertain"><h4>What remains uncertain</h4><p>This release alone does not establish executed subawards, BESS allocations, project schedules or supplier selections.</p></div></section><section class="edition-development"><p class="edition-kicker">02 / Proposed</p><h3>Nova Scotia is consulting on a technology-neutral RFQ</h3><p>IESO Nova Scotia released draft procurement documents on October 19 for on-demand generation and storage. Feedback is invited until October 26, 2026. The release describes preparation for an upcoming RFQ, not an awarded storage contract. <a class="edition-ref" href="#source-nova-rfq">[2]</a></p><h4>Why it matters</h4><p>Batteries face a competition framed around system need. A supplier should address the duty profile and qualification criteria instead of treating a capacity headline as a battery-only tender.</p><h4>Engineering &amp; commercial implications</h4><p>AGI&amp;M analysis: review the final qualification documents when released, and test the proposed operating envelope against usable energy, sustained output, recharge access and availability commitments. Preserve a record of draft-versus-final requirements in the bid compliance matrix.</p><div class="edition-uncertain"><h4>What remains uncertain</h4><p>Final RFQ language, qualifying technology mix, awarded capacity and selected proponents are not established by this draft consultation.</p></div></section><section class="edition-development"><p class="edition-kicker">03 / Reported analysis</p><h3>Duration is becoming a specification decision rather than a marketing shorthand</h3><p>The Canada Energy Regulator’s October 7 snapshot describes four-hour and longer-duration systems as increasingly common, alongside earlier one- to two-hour utility systems. This is a system-level observation, not a specification for every Canadian procurement. <a class="edition-ref" href="#source-cer-storage">[3]</a></p><h4>Why it matters</h4><p>An MW rating does not establish the amount of energy a project can deliver through its required operating window. Duration must be tied to an actual service and measurement boundary.</p><h4>Engineering &amp; commercial implications</h4><p>AGI&amp;M analysis: require a time-based AC delivery profile, temperature assumptions, state-of-charge limits, auxiliary consumption and end-of-warranty capacity. Compare offers at the same point of delivery. A nominal four-hour product can still miss a project requirement if its guarantees use a different boundary.</p><div class="edition-uncertain"><h4>What remains uncertain</h4><p>The snapshot does not resolve a particular site’s duty cycle, augmentation needs, equipment price or commercial warranty.</p></div></section></section><section id="implications"><h2>Decisions to carry forward</h2><ul><li>Keep funding eligibility, procurement qualification and equipment acceptance as separate gates. Each gate should have an owner and a document that can be checked.</li><li>For any proposed BESS, compare delivered AC energy, import/export limits and warranty duty against the same operating scenario before comparing headline prices.</li></ul></section><section><h2>What remains uncertain</h2><ul><li>No supplier awards, financing closes or commissioning dates are inferred from these sources.</li><li>The source publications do not establish current project-specific equipment quotations or lead times.</li></ul></section><section id="watchlist" class="edition-watch"><h2>Next Week’s Watchlist</h2><ul><li>Check whether Nova Scotia publishes final qualification documents after the consultation closes.</li><li>Track recipient-level resilience project notices and actual solicitations following the DOE funding announcement.</li><li>Review new storage specifications for usable AC duration, recharge constraints and measurable acceptance conditions.</li></ul><p class="edition-note">These are questions for the next review, not statements about future outcomes.</p></section><section id="sources"><h2>Primary source references</h2><ol class="edition-sources"><li id="source-doe-grid"><a href="https://www.energy.gov/articles/energy-department-announces-new-investments-strengthen-americas-power-grid-and-lower" rel="noopener noreferrer">Grid resilience formula funding announcement</a><p>U.S. Department of Energy · Source date: 2026-10-20 · Verified: 2026-10-25</p></li><li id="source-nova-rfq"><a href="https://www.ieso-ns.ca/ieso-nova-scotia-seeks-feedback-on-draft-procurement-documents-in-preparation-to-launch-technology-neutral-rfq/" rel="noopener noreferrer">Draft technology-neutral procurement documents</a><p>IESO Nova Scotia · Source date: 2026-10-19 · Verified: 2026-10-25</p></li><li id="source-cer-storage"><a href="https://cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2026/market-snapshot-battery-storage-technology-evolving-as-batteries-play-larger-role-in-electricity-systems.html" rel="noopener noreferrer">Battery storage technology and electricity systems</a><p>Canada Energy Regulator · Source date: 2026-10-07 · Verified: 2026-10-25</p></li></ol></section><p class="edition-policy">Facts are attributed to the cited sources. Sections labelled analysis are our interpretation. This publication is informational; project decisions require current technical, contractual and regulatory evidence.</p><nav class="edition-pagination" aria-label="Edition navigation"><a href="/insights/intelligence/2026-reference-01/">← Previous: Launch Reference 01</a><a href="/insights/intelligence/2026-w44/">Next: 2026 · Week 44 →</a><a href="/insights/intelligence/archive/">Browse All Editions</a></nav></div></article></main>
 
-<footer class="foot">
-  <div class="wrap">
-    <div class="foot-brand"><svg width="22" height="22" viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="1" y="1" width="11" height="11" fill="#fff"/><rect x="14" y="1" width="11" height="11" fill="rgba(255,255,255,.42)"/><rect x="1" y="14" width="11" height="11" fill="rgba(255,255,255,.42)"/><rect x="14" y="14" width="11" height="11" fill="#fff"/></svg><span class="foot-name">AGI&amp;M Assets Inc.</span></div>
-    <span class="foot-copy">© 2019–2026 AGI&amp;M ASSETS INC.</span>
-    <ul class="foot-links" role="list">
-      <li><a href="/contact/">Contact</a></li>
-      <li><a href="/privacy/">Privacy</a></li>
-      <li><a href="/insights/methodology/">Research Method</a></li>
-      <li><a href="https://docs.agim.ca" target="_blank" rel="noopener">Documents</a></li>
-      <li><a href="https://www.linkedin.com/in/gongtiejing" target="_blank" rel="noopener">LinkedIn</a></li>
-    </ul>
+<footer class="g-foot">
+  <div class="g-wrap">
+    <div class="g-foot-grid">
+      <div class="g-foot-brand-col">
+        <div class="g-foot-brand"><svg width="22" height="22" viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="1" y="1" width="11" height="11" fill="#fff"/><rect x="14" y="1" width="11" height="11" fill="rgba(255,255,255,.42)"/><rect x="1" y="14" width="11" height="11" fill="rgba(255,255,255,.42)"/><rect x="14" y="14" width="11" height="11" fill="#fff"/></svg><span>AGI&amp;M Assets Inc.</span></div>
+        <p class="g-foot-about">A Canadian holding company owning and developing energy infrastructure and industrial technology businesses in North America.</p>
+        <p class="g-foot-about">Toronto, Ontario, Canada<br><a href="mailto:info@agim.ca">info@agim.ca</a></p>
+      </div>
+      <div>
+        <h2>Businesses</h2>
+        <ul>
+          <li><a href="https://energizeos.com" rel="noopener" target="_blank">Energize Solutions</a></li>
+          <li><a href="https://arcbos.com" rel="noopener" target="_blank">ARCBOS</a></li>
+          <li><a href="/businesses/">All businesses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Insights</h2>
+        <ul>
+          <li><a href="/insights/guides/bess-procurement/">BESS procurement guide</a></li>
+          <li><a href="/insights/intelligence/">Energy Intelligence</a></li>
+          <li><a href="/insights/tools/bess/">BESS calculators</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="https://docs.agim.ca" rel="noopener" target="_blank">Corporate documents</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="g-foot-bottom">
+      <span>© 2026 AGI&amp;M Assets Inc. All rights reserved.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/insights/methodology/">Research method</a></span>
+    </div>
   </div>
 </footer>
 <script>function toggleNav(){const d=document.getElementById('drawer'),b=document.getElementById('burger');b.setAttribute('aria-expanded',d.classList.toggle('open'))}</script>
