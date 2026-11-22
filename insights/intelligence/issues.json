@@ -3,6 +3,14 @@
   "language": "en",
   "issues": [
     {
+      "issue": "2026-w47",
+      "label": "2026 · Week 47",
+      "headline": "How much dispatch fits inside a BESS throughput warranty?",
+      "summary": "A worked battery-dispatch allowance shows why energy throughput, calendar coverage and measured AC delivery must be reconciled before a storage contract is signed.",
+      "published_at": "2026-11-22T12:26:27Z",
+      "url": "/insights/intelligence/2026-w47/"
+    },
+    {
       "issue": "2026-w44",
       "label": "2026 · Week 44",
       "headline": "Battery industrial policy meets utility finance and measured fleet use",
