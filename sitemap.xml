@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://agim.ca/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://agim.ca/about/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/products/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://agim.ca/products/125kw-261kwh-ci-cabinet/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/products/135kw-261kwh-ci-cabinet/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/products/125kw-250kwh-ci-cabinet/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/products/1mw-2315kwh-ac-block/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/products/407kwh-outdoor-dc-rack/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/products/705kwh-outdoor-dc-rack-europe/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/products/705kwh-outdoor-dc-rack-japan/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/products/4073kwh-20ft-dc-container/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/products/5015kwh-20ft-dc-container/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/products/5644kwh-20ft-dc-container-02p/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/products/6250kwh-20ft-dc-container/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/products/9mwh-stacked-dc-container/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/solutions/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/services/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agim.ca/company/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agim.ca/contact/</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <url><loc>https://agim.ca/privacy/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://agim.ca/businesses/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://agim.ca/insights/methodology/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://agim.ca/insights/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agim.ca/insights/intelligence/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>

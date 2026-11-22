@@ -4,22 +4,22 @@
 <meta charset="utf-8"/>
 <meta name="google-adsense-account" content="ca-pub-3331849532184610"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Contact — AGI&M Assets Inc.</title>
-<meta name="description" content="Contact AGI&M Assets Inc. for corporate, partnership and investor inquiries, or reach our operating businesses directly."/>
+<title>Request a Quote — AGI&M</title>
+<meta name="description" content="Request a quotation or specification sheet for battery energy storage systems, or ask about engineering and consulting for grid and data center power projects."/>
 <link rel="canonical" href="https://agim.ca/contact/"/>
 <link rel="icon" href="/favicon.ico" sizes="any"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://agim.ca/contact/"/>
-<meta property="og:title" content="Contact — AGI&M Assets Inc."/>
-<meta property="og:description" content="Contact AGI&M Assets Inc. for corporate, partnership and investor inquiries, or reach our operating businesses directly."/>
+<meta property="og:title" content="Request a Quote — AGI&M"/>
+<meta property="og:description" content="Request a quotation or specification sheet for battery energy storage systems, or ask about engineering and consulting for grid and data center power projects."/>
 <meta property="og:image" content="https://agim.ca/og-image.png"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
-<meta property="og:image:alt" content="AGI&amp;M Assets Inc. — long-term capital and engineering depth for North America's power infrastructure"/>
+<meta property="og:image:alt" content="AGI&amp;M Assets Inc. — energy storage systems and power infrastructure delivery"/>
 <meta property="og:site_name" content="AGI&amp;M Assets"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://agim.ca/og-image.png"/>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AGI&M Assets Inc.","url":"https://agim.ca","logo":"https://agim.ca/og-image.png","description":"A Canadian holding company that owns and develops energy infrastructure and industrial technology businesses across North America.","foundingDate":"2019","founder":{"@type":"Person","name":"Andy Gong","jobTitle":"Founder","image":"https://agim.ca/assets/andy-gong.jpg"},"areaServed":["CA","US"],"address":{"@type":"PostalAddress","addressLocality":"Toronto","addressRegion":"ON","addressCountry":"CA"},"contactPoint":{"@type":"ContactPoint","email":"info@agim.ca","contactType":"business"},"sameAs":["https://www.linkedin.com/company/agimassets/"],"subOrganization":[{"@type":"Organization","name":"Energize Solutions Inc.","url":"https://energizeos.com"},{"@type":"Organization","name":"ARCBOS","url":"https://arcbos.com"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AGI&M Assets Inc.","url":"https://agim.ca","logo":"https://agim.ca/og-image.png","description":"Canadian supplier of battery energy storage systems, delivering grid and data center power projects from consulting and engineering to equipment delivery and commissioning.","foundingDate":"2019","founder":{"@type":"Person","name":"Andy Gong","jobTitle":"Founder","image":"https://agim.ca/assets/andy-gong.jpg"},"areaServed":["CA","US"],"address":{"@type":"PostalAddress","addressLocality":"Toronto","addressRegion":"ON","addressCountry":"CA"},"contactPoint":{"@type":"ContactPoint","email":"info@agim.ca","contactType":"business"},"sameAs":["https://www.linkedin.com/company/agimassets/"],"subOrganization":[{"@type":"Organization","name":"Energize Solutions Inc.","url":"https://energizeos.com"},{"@type":"Organization","name":"ARCBOS","url":"https://arcbos.com"}]}</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-y:scroll}
@@ -367,40 +367,69 @@ img,svg{display:block;max-width:100%}
 .g-portrait{width:100%;max-width:300px;height:auto;aspect-ratio:1/1;object-fit:cover;filter:grayscale(.15);border:1px solid var(--rule)}
 @media(max-width:900px){.g-portrait{max-width:220px}}
 </style>
-<script defer src="/assets/privacy-messaging.js"></script></head>
+<style>
+.q-form{display:grid;gap:var(--sp3);background:#fff;border:1px solid var(--rule);padding:var(--sp4)}
+.q-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp3)}
+@media(max-width:640px){.q-row{grid-template-columns:1fr}.q-form{padding:var(--sp3)}}
+.q-form label{display:grid;gap:6px;font-size:13px;font-weight:600;color:#0B2545;min-width:0}
+.q-form input,.q-form select,.q-form textarea{font:inherit;font-size:15px;font-weight:400;padding:11px 12px;border:1px solid #c9d5e2;background:#fff;color:#1d2b3a;width:100%;min-width:0}
+.q-form input:focus,.q-form select:focus,.q-form textarea:focus{outline:2px solid #4A7FB5;outline-offset:1px}
+.q-status{font-size:14px;color:#B3261E;min-height:1em}
+</style><script>document.addEventListener('DOMContentLoaded',function(){var f=document.getElementById('quote');if(!f)return;var q=new URLSearchParams(location.search),p=q.get('product'),sel=document.getElementById('q-product');if(p&&sel){for(var o of sel.options){if(o.value===p){sel.value=p;break}}}if(q.get('request')==='spec')f.elements['Request'].value='Specification sheet';f.addEventListener('submit',function(e){e.preventDefault();var st=f.querySelector('.q-status');var miss=[...f.querySelectorAll('[required]')].filter(function(x){return !x.value.trim()||(x.type==='email'&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(x.value))});if(miss.length){st.textContent='Please complete: '+miss.map(function(x){return x.name}).join(', ')+'.';miss[0].focus();return}st.textContent='';location.href=window.agimQuoteMailto(f)})});window.agimQuoteMailto=function(f){var sel=document.getElementById('q-product');var lines=[...new FormData(f)].filter(function(kv){return kv[1]}).map(function(kv){return kv[0]+': '+kv[1]});var subj=f.elements['Request'].value+(sel.value?' — '+sel.value:'')+' — '+f.elements['Company'].value;return 'mailto:info@agim.ca?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(lines.join('\n'))}</script><script defer src="/assets/privacy-messaging.js"></script></head>
 <body>
 
 <nav class="nav" aria-label="Main">
   <div class="wrap">
-    <a href="/" class="brand" aria-label="AGI&M Assets home"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="1" y="1" width="11" height="11" fill="#0B2545"/><rect x="14" y="1" width="11" height="11" fill="#4A7FB5"/><rect x="1" y="14" width="11" height="11" fill="#4A7FB5"/><rect x="14" y="14" width="11" height="11" fill="#0B2545"/></svg><span class="brand-name">AGI&amp;M Assets</span></a>
+    <a href="/" class="brand" aria-label="AGI&M home"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="1" y="1" width="11" height="11" fill="#0B2545"/><rect x="14" y="1" width="11" height="11" fill="#4A7FB5"/><rect x="1" y="14" width="11" height="11" fill="#4A7FB5"/><rect x="14" y="14" width="11" height="11" fill="#0B2545"/></svg><span class="brand-name">AGI&amp;M</span></a>
     <ul class="nav-links" role="list">
-      <li><a href="/businesses/">Businesses</a></li>
+      <li><a href="/products/">Products</a></li>
+      <li><a href="/solutions/">Solutions</a></li>
+      <li><a href="/services/">Services</a></li>
       <li><a href="/insights/">Insights</a></li>
-      <li><a href="/about/">About</a></li>
+      <li><a href="/company/">Company</a></li>
     </ul>
-    <a href="/contact/" class="nav-doc">Contact</a>
+    <a href="/contact/" class="nav-doc">Request a Quote</a>
     <button class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="nav-drawer" id="drawer" aria-label="Mobile">
-  <a href="/businesses/">Businesses</a>
+  <a href="/products/">Products</a>
+  <a href="/solutions/">Solutions</a>
+  <a href="/services/">Services</a>
   <a href="/insights/">Insights</a>
-  <a href="/about/">About</a>
-  <a href="/contact/">Contact</a>
+  <a href="/company/">Company</a>
+  <a href="/contact/">Request a Quote</a>
 </div>
 <main>
 <section class="g-hero">
   <div class="g-wrap">
-    <p class="g-kicker">Contact</p>
-    <h1 class="g-h1">Contact <strong>AGI&amp;M Assets Inc.</strong></h1>
-    <p class="g-lead">Corporate, partnership and investor inquiries come to AGI&amp;M. Project and product inquiries go directly to the operating business.</p>
+    <p class="g-kicker">Request a quote</p>
+    <h1 class="g-h1">Tell us what <strong>you need.</strong></h1>
+    <p class="g-lead">An engineer reviews your request and replies with a product recommendation and quotation terms.</p>
   </div>
 </section>
 <section class="g-section">
-  <div class="g-wrap g-grid g-grid-3">
-    <article class="g-card g-card-accent"><h3 class="g-h3">AGI&amp;M Assets Inc.</h3><p>Corporate, partnership and investor inquiries.</p><dl class="g-kv"><dt>Email</dt><dd><a href="mailto:info@agim.ca">info@agim.ca</a></dd><dt>Office</dt><dd>Toronto, Ontario, Canada</dd></dl></article>
-    <article class="g-card"><h3 class="g-h3">Energy projects</h3><p>Battery storage, microgrid, data center energy and engineering services.</p><a class="g-link" href="https://energizeos.com/contact/" rel="noopener" target="_blank">Energize Solutions</a></article>
-    <article class="g-card"><h3 class="g-h3">Autonomous systems</h3><p>SnowBot and robotics-as-a-service for commercial facilities.</p><a class="g-link" href="https://arcbos.com" rel="noopener" target="_blank">ARCBOS</a></article>
+  <div class="g-wrap g-split">
+    <div>
+      <h2 class="g-h3" style="margin-bottom:var(--sp2)">Direct contact</h2>
+      <dl class="g-kv"><dt>Email</dt><dd><a href="mailto:info@agim.ca">info@agim.ca</a></dd><dt>Phone</dt><dd><a href="tel:+18325987388">+1 (832) 598-7388</a></dd><dt>Offices</dt><dd>Toronto, Ontario, Canada<br>Houston, Texas, USA</dd></dl>
+      <h2 class="g-h3" style="margin:var(--sp5) 0 var(--sp2)">What happens next</h2>
+      <ul class="g-check"><li>An engineer reviews your site and requirements.</li><li>We confirm the product, scope and trade terms.</li><li>You receive a quotation with the controlled specification sheet.</li></ul>
+      <h2 class="g-h3" style="margin:var(--sp5) 0 var(--sp2)">Corporate, partnership and investor inquiries</h2>
+      <p class="g-meta" style="font-size:15px">Write to <a href="mailto:info@agim.ca">info@agim.ca</a> with "Corporate" in the subject line.</p>
+    </div>
+    <form class="q-form" id="quote" novalidate>
+      <div class="q-row"><label>Name<input name="Name" autocomplete="name" required></label><label>Company<input name="Company" autocomplete="organization" required></label></div>
+      <div class="q-row"><label>Email<input name="Email" type="email" autocomplete="email" required></label><label>Phone (optional)<input name="Phone" type="tel" autocomplete="tel"></label></div>
+      <div class="q-row"><label>Request<select name="Request"><option>Quotation</option><option value="Specification sheet">Specification sheet</option><option>Engineering or consulting</option></select></label><label>Country / state<input name="Location" placeholder="e.g. Texas, USA"></label></div>
+      <label>Product<select name="Product" id="q-product"><option value="">Not sure / multiple products</option><option value="AGIM-BESS-1001-NA">AGIM-BESS-1001-NA — 125 kW / 261 kWh C&amp;I Energy Storage Cabinet (North America)</option><option value="AGIM-BESS-1001-EU">AGIM-BESS-1001-EU — 125 kW / 261 kWh C&amp;I Energy Storage Cabinet (Europe)</option><option value="AGIM-BESS-1002-NA">AGIM-BESS-1002-NA — 135 kW / 261 kWh C&amp;I Energy Storage Cabinet (North America)</option><option value="AGIM-BESS-1003-NA">AGIM-BESS-1003-NA — 125 kW / 250 kWh C&amp;I Energy Storage Cabinet (North America)</option><option value="AGIM-BESS-1003-EU">AGIM-BESS-1003-EU — 125 kW / 250 kWh C&amp;I Energy Storage Cabinet (Europe)</option><option value="AGIM-BESS-1004-EU">AGIM-BESS-1004-EU — 1 MW / 2.3 MWh AC Block Container (Europe)</option><option value="AGIM-BESS-1005-NA">AGIM-BESS-1005-NA — 407 kWh Outdoor DC Battery Rack (North America)</option><option value="AGIM-BESS-1005-EU">AGIM-BESS-1005-EU — 407 kWh Outdoor DC Battery Rack (Europe)</option><option value="AGIM-BESS-1005-JP">AGIM-BESS-1005-JP — 407 kWh Outdoor DC Battery Rack (Japan)</option><option value="AGIM-BESS-1006-EU">AGIM-BESS-1006-EU — 705 kWh Outdoor DC Battery Rack (Europe)</option><option value="AGIM-BESS-1007-JP">AGIM-BESS-1007-JP — 705 kWh Outdoor DC Battery Rack (Japan) (Japan)</option><option value="AGIM-BESS-1008-NA">AGIM-BESS-1008-NA — 4.07 MWh 20-ft DC Battery Container (North America)</option><option value="AGIM-BESS-1008-EU">AGIM-BESS-1008-EU — 4.07 MWh 20-ft DC Battery Container (Europe)</option><option value="AGIM-BESS-1008-JP">AGIM-BESS-1008-JP — 4.07 MWh 20-ft DC Battery Container (Japan)</option><option value="AGIM-BESS-1009-NA">AGIM-BESS-1009-NA — 5.0 MWh 20-ft DC Battery Container (North America)</option><option value="AGIM-BESS-1009-EU">AGIM-BESS-1009-EU — 5.0 MWh 20-ft DC Battery Container (Europe)</option><option value="AGIM-BESS-1010-JP">AGIM-BESS-1010-JP — 5.6 MWh 20-ft DC Battery Container (0.2P) (Japan)</option><option value="AGIM-BESS-1011-EU">AGIM-BESS-1011-EU — 6.25 MWh 20-ft DC Battery Container (Europe)</option><option value="AGIM-BESS-1012-EU">AGIM-BESS-1012-EU — 9 MWh Stacked DC Battery Container (Europe)</option><option value="AGIM-BESS-1012-JP">AGIM-BESS-1012-JP — 9 MWh Stacked DC Battery Container (Japan)</option></select></label>
+      <div class="q-row"><label>Quantity or project size<input name="Size" placeholder="e.g. 4 units, 10 MWh"></label><label>Required delivery<input name="Delivery" placeholder="e.g. Q3 2027"></label></div>
+      <label>Trade terms<select name="Trade terms"><option>Not sure</option><option>FOB</option><option>DDP</option></select></label>
+      <label>Project details<textarea name="Details" rows="5" required></textarea></label>
+      <p class="q-status" role="status" aria-live="polite"></p>
+      <div><button class="g-btn g-btn-primary" type="submit">Send request</button></div>
+      <p class="g-note" style="margin-top:0">Sending opens your email app with the request filled in, addressed to info@agim.ca. Your details are used only to respond. See our <a href="/privacy/">privacy notice</a>.</p>
+    </form>
   </div>
 </section></main>
 
@@ -409,38 +438,41 @@ img,svg{display:block;max-width:100%}
     <div class="g-foot-grid">
       <div class="g-foot-brand-col">
         <div class="g-foot-brand"><svg width="22" height="22" viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="1" y="1" width="11" height="11" fill="#fff"/><rect x="14" y="1" width="11" height="11" fill="rgba(255,255,255,.42)"/><rect x="1" y="14" width="11" height="11" fill="rgba(255,255,255,.42)"/><rect x="14" y="14" width="11" height="11" fill="#fff"/></svg><span>AGI&amp;M Assets Inc.</span></div>
-        <p class="g-foot-about">A Canadian holding company owning and developing energy infrastructure and industrial technology businesses in North America.</p>
-        <p class="g-foot-about">Toronto, Ontario, Canada<br><a href="mailto:info@agim.ca">info@agim.ca</a></p>
+        <p class="g-foot-about">Battery energy storage systems and grid and data center power projects, from consulting and engineering to equipment delivery and commissioning.</p>
+        <p class="g-foot-about">Toronto, Ontario, Canada<br><a href="mailto:info@agim.ca">info@agim.ca</a> · <a href="tel:+18325987388">+1 (832) 598-7388</a></p>
       </div>
       <div>
-        <h2>Businesses</h2>
+        <h2>Products</h2>
         <ul>
-          <li><a href="https://energizeos.com" rel="noopener" target="_blank">Energize Solutions</a></li>
-          <li><a href="https://arcbos.com" rel="noopener" target="_blank">ARCBOS</a></li>
-          <li><a href="/businesses/">All businesses</a></li>
+          <li><a href="/products/#ac-cabinet">C&amp;I AC cabinets</a></li>
+          <li><a href="/products/#dc-battery">DC containers and racks</a></li>
+          <li><a href="/products/#ac-block">AC block containers</a></li>
+          <li><a href="/products/">All products</a></li>
         </ul>
       </div>
       <div>
-        <h2>Insights</h2>
+        <h2>Solutions</h2>
         <ul>
-          <li><a href="/insights/guides/bess-procurement/">BESS procurement guide</a></li>
-          <li><a href="/insights/intelligence/">Energy Intelligence</a></li>
-          <li><a href="/insights/tools/bess/">BESS calculators</a></li>
+          <li><a href="/solutions/#storage">Energy storage</a></li>
+          <li><a href="/solutions/#grid">Grid systems</a></li>
+          <li><a href="/solutions/#data-center">Data center energy</a></li>
+          <li><a href="/services/">Services</a></li>
         </ul>
       </div>
       <div>
         <h2>Company</h2>
         <ul>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a href="https://docs.agim.ca" rel="noopener" target="_blank">Corporate documents</a></li>
+          <li><a href="/company/">About AGI&amp;M</a></li>
+          <li><a href="/insights/">Insights</a></li>
+          <li><a href="/contact/">Request a quote</a></li>
+          <li><a href="https://energizeos.com" rel="noopener" target="_blank">EnergizeOS (group engineering)</a></li>
           <li><a href="https://www.linkedin.com/company/agimassets/" rel="noopener" target="_blank">LinkedIn</a></li>
         </ul>
       </div>
     </div>
     <div class="g-foot-bottom">
       <span>© 2026 AGI&amp;M Assets Inc. All rights reserved.</span>
-      <span><a href="/privacy/">Privacy</a> · <a href="/insights/methodology/">Research method</a></span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/insights/methodology/">Research method</a> · <a href="https://docs.agim.ca" rel="noopener" target="_blank">Corporate documents</a></span>
     </div>
   </div>
 </footer>
