@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "source_issue": "2026-w47",
-  "source_payload_sha256": "d7fed4664b3ab5613c4a5aa65b69c6a9da0a83e719b4ab2766d05875057f73d1",
-  "snapshot_observed_on": "2026-11-16",
+  "source_issue": "2026-w48",
+  "source_payload_sha256": "c6de63880f1cafaf8e6a921e8c5af5162b2f1253c69e18f13d491a3c3b598a23",
+  "snapshot_observed_on": "2026-11-24",
   "metrics": [
     {
       "id": "bls_storage_battery_ppi",

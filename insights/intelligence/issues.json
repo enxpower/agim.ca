@@ -3,6 +3,14 @@
   "language": "en",
   "issues": [
     {
+      "issue": "2026-w48",
+      "label": "2026 · Week 48",
+      "headline": "The price spread a battery actually needs to break even",
+      "summary": "An efficiency-adjusted dispatch worksheet reveals why a positive electricity price spread may still lose money, and how to compare battery offers at the same AC settlement boundary.",
+      "published_at": "2026-11-24T01:56:11Z",
+      "url": "/insights/intelligence/2026-w48/"
+    },
+    {
       "issue": "2026-w47",
       "label": "2026 · Week 47",
       "headline": "How much dispatch fits inside a BESS throughput warranty?",
